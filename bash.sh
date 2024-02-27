@@ -397,4 +397,206 @@ do
     echo "Found a file: $i"
 done
 
+# Case statement
+# Checks an input against a set of predefined vales
+# Runs code when an input matches a condition
+# The test condition comes before a right parenthesis to indicate the end of the test
+# Need to wrap a condition that has spaces in quotes
+animal="dog"
+case $animal in
+  bird) echo "Avian";; # ;; indicates "done with this contiion". You can still add more condtions
+  dog|puppy) echo "Canine";; 
+  *) echo "No match!";; # can use wildcards
+esac
 
+# Functions
+# Allow us to repeatedly call a piece of code 
+# Older ver: function fname { ... }
+# Often placed at the top of the script
+
+greet() {
+    echo "Hello!"
+}
+
+echo "And now, a greeting!"
+greet
+
+greet() {
+    echo "Hello $1!"
+}
+echo "And now, a greeting!"
+greet biggie
+
+greet() {
+    echo "Hello $1! What a nice $2"
+}
+echo "And now, a greeting!"
+greet biggie morning
+greet everybody day
+
+numberthings() {
+    i=1
+    for f in "$@"; do
+        echo $i: "$f"
+        ((i++))
+    done
+    echo "This counting was brought to you by the function $FUNCNAME!"  
+}
+numberthings # calls the function
+
+var1="I'm variable 1"
+
+myfunction() {
+    var2="I'm variable 2"
+    local var3="I'm variable 3"
+}
+myfunction
+echo $var1
+echo $var2
+echo $var3 # won't be printed since's it's local to the function
+
+# Input reditrection
+# > output
+# >> append
+
+for i in 1 2 3 4 5
+do  
+    echo "This is line $i" > textfile.txt
+done
+
+for i in 1 2 3 4 5
+do  
+    echo "This is line $i" >> textfile.txt
+done
+
+# read keyword
+# reads through text 
+while read f
+    do echo "I read a libe and it says: $f"
+done < textfile.txt
+
+# Arguments
+# Allow us to pass information into a script from the CLI
+# Are text that represent a string, a filename, and so on
+# Are represented by numbered variables ($1, $2, and so on)
+# Assigned in the order they're provided
+# An argument with spaces needs quotes
+
+echo "The $0 script got the argument: $1"
+echo "Argument 2 is: $2"
+
+for i in "$@"
+do
+    echo $1
+done
+
+echo "There were $# arguments."
+
+# Options
+# Allow us to pass info into a script from the CLI
+# Are a combo of a dash and a letter (like -u or -p)
+# Are accessed using the getopts keyword
+# Can accept arguments of their own
+# Can be specified and used in any order
+# Flexible order = more user-friendly 
+
+while getopts u:p: option; do
+    case $option in
+        u) user=$OPTARG;;
+        p) pass=$OPTARG;;
+    esac
+done
+
+echo "user: $user / pass: $pass"
+
+while getopts u:p: option; do
+    case $option in
+        u) user=$OPTARG;;
+        p) pass=$OPTARG;;
+        a) echo "got the 'a' flag";;
+        b) echo "got the 'b' flag";;
+        ?) echo "I don't know what $OPTARG is!"
+    esac
+done
+
+echo "user: $user / pass: $pass"
+
+# Read 
+# Scripts often nees input
+# The read keyword allows us to gather input, pausing the script until input is provided
+# This is the same read command that was used earlier to read a text file. 
+# It can read from the CLI too
+
+echo "What's your name?"
+read name
+
+echo "What's your password?"
+read -s pass # -s won't show the text the user inputs
+
+read -p "What's your favorite animal?" animal
+
+echo name: $name, pass: $pass, animal: $animal
+
+# Select
+# Users can choose form a list of options
+select animal in "bird" "dog" "fish"
+do 
+    case $animal in
+       bird) echo "Birds like to fly!";;
+       dog) echo "Dogs like to play catch.";;
+       fish) echo "Fish like to swim.";;
+       quit) break;;
+       *) echo "Not sure what that is!"
+    esac
+done
+# Typing the number of the option will equate to that option
+# For ex, you can type 1 or "bird." It will run the same.
+
+# suggest a response to the user
+read -ep "Favorite color? " -i "Blue" favcolor
+echo "$favcolor"
+
+# if the user doesn't specified the required number of args
+if (($#<3)); then 
+    echo "This command takes three arguments:"
+    echo "username, userid, and favorite number":
+else 
+    echo "username: $1"
+    echo "userid: $2"
+    echo "favorite number: $3"
+fi
+
+# if the user supplies an empty string
+read -p "Favorite animal? " fav
+while [[ -z $fav ]]
+do
+    read -p "I need an answer! " fav
+done
+echo "$fav was selected."
+
+# Assumes the default answer if the user just presses enter
+read -p "Favorite animal? [dog] " fav # Square brackets indicate default value
+if [[ -z $fav ]]; then
+    fav="cat"
+fi
+echo "$fav was selected."
+
+# Can do basic validation of input
+# Reject an answet that doesn't match a particular condition
+read -p "What year? [nnnn] " year
+until [[ $year =~ [0-9] {4} ]]; do
+    read -p "A four-digit year, please! [nnnn] " year
+done
+echo "Selected year: $year"
+
+# troubleshooting strategies:
+# read the errors carefully
+# observe line numbers in errors  
+# check quotes and escaping
+# check spacing in tests
+# check closure of expansions and substitutions
+# variables are case-sensitive
+# use set -x to display commands as they run
+# add echo statements to keep track of program flow
+# use true and false built-ins to troubleshoot logic
+# break down complex scripts into smaller parts to find problems
