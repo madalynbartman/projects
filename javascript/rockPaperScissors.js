@@ -6,26 +6,27 @@ let ties = 0;
 
 while (true) {
     const playerChoice = prompt("Enter rock, paper, or scissors: (q to quit): ");
-    if (playerChoice.toLowerCase === "q"
+    if (playerChoice.toLowerCase() === "q"
     ) { 
         break;
     }
+
     if (
-        playerChoice === "rock" || 
-        playerChoice === "paper" || 
-        playerChoice === "scissors"
+        playerChoice !== "rock" &&
+        playerChoice !== "paper" &&
+        playerChoice !== "scissors"
     ) {
         console.log("PLease enter a valid choice.");
         continue;
     }
 
     // generate a random index that corresponds to 0,1,2 that corresponds to rock, paper, scissors
-    const playerChoices = ["rock", "paper", "scissors"];
+    const choices = ["rock", "paper", "scissors"];
     const randomIndex = Math.round(Math.random() * 2);
-    const computerplayerChoice = playerChoices[randomIndex];
-    console.log(computerplayerChoice);
+    const computerChoice = choices[randomIndex];
+    console.log("The computer chose:", computerChoice);
 
-    if (computerplayerChoice === playerChoice) {
+    if (computerChoice === playerChoice) {
         console.log("Draw!");
         ties++;
     } else if (
