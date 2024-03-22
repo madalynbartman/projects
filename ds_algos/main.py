@@ -3,5 +3,6 @@ from visualize import visualize
 from exchange_sort import exchange_sort
 from bubble_sort import bubble_sort
 from brick_sort import brick_sort
+from comb_sort import comb_sort  
 
-visualize(brick_sort, n = 30)
+visualize(comb_sort, n = 50)
