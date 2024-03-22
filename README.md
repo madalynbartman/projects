@@ -7,8 +7,11 @@ http://www.cs.cmu.edu/afs/cs/usr/wing/www/publications/Wing06.pdf
 Vanilla programming projects and cs fundamentals:
 https://www.youtube.com/@TechWithTim
 
-Cool Python:
+Intermediate to Advanced Python projects and cs fundamentals:
 https://www.youtube.com/@codingcassowary6391
+
+Fundamentals of Comp Sci and Python for high school students (barney style)
+https://www.youtube.com/@leftpeel7846
 
 Generative art in vanilla JavaScript:
 https://www.youtube.com/@Frankslaboratory
