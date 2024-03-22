@@ -32,3 +32,11 @@ https://www.youtube.com/playlist?list=PLzMcBGfZo4-koVtlaOKE3udUIYhbG9s6Q
 NumPy & Pandas:
 NumPy Tutorials:
 https://www.youtube.com/playlist?list=PLzMcBGfZo4-ksMuZFqH5LBytux1_p7bcx
+
+Creative coding:
+https://www.hackerrank.com/blog/creating-art-with-code/
+Visualizing music: https://experiments.withgoogle.com/seeing-music
+Wikipedia: https://en.wikipedia.org/wiki/Creative_coding
+Hack the art world: https://hacktheartworld.com/index.html
+Google creative lab: https://github.com/googlecreativelab
+Experiments with Google: https://experiments.withgoogle.com/
