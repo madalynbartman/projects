@@ -40,3 +40,4 @@ Wikipedia: https://en.wikipedia.org/wiki/Creative_coding
 Hack the art world: https://hacktheartworld.com/index.html
 Google creative lab: https://github.com/googlecreativelab
 Experiments with Google: https://experiments.withgoogle.com/
+Beating DALL-E with generative art (amazing abstract art): https://towardsdatascience.com/how-i-created-generative-art-with-python-that-10000-dall-e-credits-could-not-buy-fcf804b61437
