@@ -4,14 +4,30 @@ Computational thinking and python for data analysis:
 https://www.youtube.com/@gilesmcmullen 
 http://www.cs.cmu.edu/afs/cs/usr/wing/www/publications/Wing06.pdf
 
-Vanilla pogramming projects and cs fundamentals:
+Vanilla programming projects and cs fundamentals:
 https://www.youtube.com/@TechWithTim
+(python only)
+https://www.youtube.com/@codingcassowary6391
 
 Generative art in vanilla JavaScript:
 https://www.youtube.com/@Frankslaboratory
 
+JavaScript projects:
+https://www.youtube.com/watch?v=E3XxeE7NF30
+https://www.youtube.com/watch?v=ZIw7QGVwaNI
+
 Generative art in vanilla python:
 projects:
 https://www.youtube.com/playlist?list=PLBLV84VG7Md9oO4MUOhyqz7gBFOzx8XIw
-fundamentals:
+intro:
 https://www.youtube.com/watch?v=pDnjLqExT4s
+
+DS & Algos
+Sorting algoritums and visulatizations with python:
+https://www.youtube.com/playlist?list=PLBLV84VG7Md-N4l5ubrsLmGws523BJS7l
+Search algos in python:
+https://www.youtube.com/playlist?list=PLzMcBGfZo4-koVtlaOKE3udUIYhbG9s6Q
+
+NumPy & Pandas:
+NumPy Tutorials:
+https://www.youtube.com/playlist?list=PLzMcBGfZo4-ksMuZFqH5LBytux1_p7bcx
