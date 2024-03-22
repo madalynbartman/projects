@@ -6,7 +6,8 @@ http://www.cs.cmu.edu/afs/cs/usr/wing/www/publications/Wing06.pdf
 
 Vanilla programming projects and cs fundamentals:
 https://www.youtube.com/@TechWithTim
-(python only)
+
+Cool Python:
 https://www.youtube.com/@codingcassowary6391
 
 Generative art in vanilla JavaScript:
