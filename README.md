@@ -1,5 +1,9 @@
 Resources:
 
+
+Channels
+
+
 Computational thinking and python for data analysis:
 https://www.youtube.com/@gilesmcmullen 
 http://www.cs.cmu.edu/afs/cs/usr/wing/www/publications/Wing06.pdf
@@ -15,6 +19,14 @@ https://www.youtube.com/@leftpeel7846
 
 Generative art in vanilla JavaScript:
 https://www.youtube.com/@Frankslaboratory
+
+Free classes, tips, projects:
+(absolute best resource in my opinion)
+https://www.youtube.com/freecodecamp
+
+
+Playlists
+
 
 JavaScript projects:
 https://www.youtube.com/watch?v=E3XxeE7NF30
@@ -36,6 +48,14 @@ NumPy & Pandas:
 NumPy Tutorials:
 https://www.youtube.com/playlist?list=PLzMcBGfZo4-ksMuZFqH5LBytux1_p7bcx
 
+Python for everybody presented by free code camp:
+(Free college intro to python)
+https://www.youtube.com/watch?v=8DvywoWv6fI
+
+
+Misc
+
+
 Creative coding:
 https://www.hackerrank.com/blog/creating-art-with-code/
 Visualizing music: https://experiments.withgoogle.com/seeing-music
@@ -44,3 +64,9 @@ Hack the art world: https://hacktheartworld.com/index.html
 Google creative lab: https://github.com/googlecreativelab
 Experiments with Google: https://experiments.withgoogle.com/
 Beating DALL-E with generative art (amazing abstract art): https://towardsdatascience.com/how-i-created-generative-art-with-python-that-10000-dall-e-credits-could-not-buy-fcf804b61437
+
+Study tips
+1: Retrieval practice (test yourself)
+2: Spaced practice
+3: Interleaving (leanring multiple topics within a session)
+4: Elabortative Interrogation (ask how and why)
