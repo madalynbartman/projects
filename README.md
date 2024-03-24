@@ -1,7 +1,9 @@
 Resources:
 
 
-Channels
+*************************************
+* Channels                          *
+*************************************
 
 
 Vanilla programming projects and a little bit of cs fundamentals:
@@ -25,14 +27,19 @@ Free classes, tips, projects:
 https://www.youtube.com/freecodecamp
 
 
-Playlists
+*************************************
+* Playlists                         *
+*************************************
 
+
+Python projects:
+https://www.youtube.com/watch?v=NpmFbWO6HPU
 
 JavaScript projects:
 https://www.youtube.com/watch?v=E3XxeE7NF30
 https://www.youtube.com/watch?v=ZIw7QGVwaNI
 
-Generative art in vanilla python:
+Generative art in vanilla python
 projects:
 https://www.youtube.com/playlist?list=PLBLV84VG7Md9oO4MUOhyqz7gBFOzx8XIw
 intro:
@@ -46,7 +53,7 @@ https://www.youtube.com/playlist?list=PLzMcBGfZo4-koVtlaOKE3udUIYhbG9s6Q
 Intro to Algos in python:
 https://www.youtube.com/playlist?list=PLmzkEJ1Zz_uZZ9LZSBmVxh4pPpfWiKYmX
 
-NumPy & Pandas:
+NumPy & Pandas
 NumPy Tutorials:
 https://www.youtube.com/playlist?list=PLzMcBGfZo4-ksMuZFqH5LBytux1_p7bcx
 
@@ -57,12 +64,14 @@ https://www.youtube.com/watch?v=8DvywoWv6fI
 Comp sci fundamentals:
 https://www.youtube.com/playlist?list=PLmzkEJ1Zz_uZoMpSdb1b2ULdTeY4d8BMa
 
-AI:
+AI
 Simple Bot (Barney style, good intro):
 https://www.youtube.com/playlist?list=PLmzkEJ1Zz_uZN89BdPwr9qQ06jqsm6UY6
 
 
-Misc
+*************************************
+* Misc                              *
+*************************************
 
 
 Creative coding:
