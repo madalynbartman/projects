@@ -8,13 +8,13 @@ Computational thinking and python for data analysis:
 https://www.youtube.com/@gilesmcmullen 
 http://www.cs.cmu.edu/afs/cs/usr/wing/www/publications/Wing06.pdf
 
-Vanilla programming projects and cs fundamentals:
+Vanilla programming projects and a little bit of cs fundamentals:
 https://www.youtube.com/@TechWithTim
 
 Intermediate to Advanced Python projects and cs fundamentals:
 https://www.youtube.com/@codingcassowary6391
 
-Fundamentals of Comp Sci and Python for high school students (barney style)
+Python and solid cs fundamentals for high school students (barney style):
 https://www.youtube.com/@leftpeel7846
 
 Generative art in vanilla JavaScript:
