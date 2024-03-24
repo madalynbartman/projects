@@ -88,3 +88,11 @@ Study tips
 2: Spaced practice
 3: Interleaving (leanring multiple topics within a session)
 4: Elabortative Interrogation (ask how and why)
+
+Statement = sentance
+Function = paragraph 
+(Store & reuse. 
+Don't repeat code. 
+Functions are better for reliability. 
+If there's an issue, you only have to fix it once.)
+Script = short story 
