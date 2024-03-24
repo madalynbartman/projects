@@ -4,18 +4,18 @@ Resources:
 Channels
 
 
-Computational thinking and python for data analysis:
-https://www.youtube.com/@gilesmcmullen 
-http://www.cs.cmu.edu/afs/cs/usr/wing/www/publications/Wing06.pdf
-
 Vanilla programming projects and a little bit of cs fundamentals:
 https://www.youtube.com/@TechWithTim
+
+Python and solid cs fundamentals for high school students (barney style):
+https://www.youtube.com/@leftpeel7846
 
 Intermediate to Advanced Python projects and cs fundamentals:
 https://www.youtube.com/@codingcassowary6391
 
-Python and solid cs fundamentals for high school students (barney style):
-https://www.youtube.com/@leftpeel7846
+Computational thinking and python for data analysis:
+https://www.youtube.com/@gilesmcmullen 
+http://www.cs.cmu.edu/afs/cs/usr/wing/www/publications/Wing06.pdf
 
 Generative art in vanilla JavaScript:
 https://www.youtube.com/@Frankslaboratory
@@ -43,6 +43,8 @@ Sorting algoritums and visulatizations with python:
 https://www.youtube.com/playlist?list=PLBLV84VG7Md-N4l5ubrsLmGws523BJS7l
 Search algos in python:
 https://www.youtube.com/playlist?list=PLzMcBGfZo4-koVtlaOKE3udUIYhbG9s6Q
+Intro to Algos in python:
+https://www.youtube.com/playlist?list=PLmzkEJ1Zz_uZZ9LZSBmVxh4pPpfWiKYmX
 
 NumPy & Pandas:
 NumPy Tutorials:
@@ -51,6 +53,13 @@ https://www.youtube.com/playlist?list=PLzMcBGfZo4-ksMuZFqH5LBytux1_p7bcx
 Python for everybody presented by free code camp:
 (Free college intro to python)
 https://www.youtube.com/watch?v=8DvywoWv6fI
+
+Comp sci fundamentals:
+https://www.youtube.com/playlist?list=PLmzkEJ1Zz_uZoMpSdb1b2ULdTeY4d8BMa
+
+AI:
+Simple Bot (Barney style, good intro):
+https://www.youtube.com/playlist?list=PLmzkEJ1Zz_uZN89BdPwr9qQ06jqsm6UY6
 
 
 Misc
