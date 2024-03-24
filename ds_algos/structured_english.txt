@@ -1,0 +1,12 @@
+WHILE ID is incorrect
+    ASK USER FOR ID
+
+    If user has correct ID THEN
+        Allow user access to the system and exit the loop
+
+    ELSE IF user has entered an incorrect ID 5 times then
+    freeze the system for 10 seconds
+
+    ELSE
+        Tell the user they entered an incorrect 
+        ID and to try again
