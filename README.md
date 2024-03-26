@@ -67,6 +67,9 @@ https://www.youtube.com/playlist?list=PLmzkEJ1Zz_uZZ9LZSBmVxh4pPpfWiKYmX
 Comp sci fundamentals:
 https://www.youtube.com/playlist?list=PLmzkEJ1Zz_uZoMpSdb1b2ULdTeY4d8BMa
 
+DS & Algos in python (FCC):
+https://www.youtube.com/watch?v=pkYVOmU3MgA
+
 Data Analysis
 
 NumPy Tutorials:
