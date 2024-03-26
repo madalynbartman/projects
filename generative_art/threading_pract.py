@@ -29,9 +29,9 @@ def draw_shape():
     if shape == 'circle':
         pygame.draw.circle(screen, color, (random.randint(0, WINDOW_WIDTH), random.randint(0, WINDOW_HEIGHT)), size, size//10)
     elif shape == 'square':
-        pygame.draw.rect(screen, color, (random.randint(0, WINDOW_WIDTH - size), random.randint(0, WINDOW_HEIGHT - size), size, size), si)
+        pygame.draw.rect(screen, color, (random.randint(0, WINDOW_WIDTH - size), random.randint(0, WINDOW_HEIGHT - size), size, size), size//10)
     elif shape == 'triangle':
-        points = [(random.randint(0, WINDOW_WIDTH), random.randint(0, WINDOW_HEIGHT)) for i in rnage(3)]
+        points = [(random.randint(0, WINDOW_WIDTH), random.randint(0, WINDOW_HEIGHT)) for i in range(3)]
         for i in range(3):
             # Draw each segment of the triangle in sequence
             pygame.draw.line(screen, color, points[i], points[(i+1)%3], size//10)
