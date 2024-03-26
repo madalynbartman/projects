@@ -89,6 +89,9 @@ Python for Machine Learning & Data Science Masterclass
 (Rigorous & recomended by Jason from Brynn Niel)
 https://www.udemy.com/course/python-for-machine-learning-data-science-masterclass/learn/lecture/22983452?start=0#overview
 
+Audio Data Processing in Python:
+https://www.youtube.com/watch?v=ZqpSb5p1xQo
+
 University Courses
 
 Python for everybody presented by free code camp:
