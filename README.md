@@ -124,6 +124,7 @@ https://www.youtube.com/watch?v=9Y3yaoi9rUQ
 
 Make Art With Python by Kirk Kaiser
 https://www.makeartwithpython.com/book/introduction
+(went through chp 1-7)
 
 
 *************************************
