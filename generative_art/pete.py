@@ -1,4 +1,6 @@
 import turtle
+# First original art
+# Replicartion of Pete's steam profile photo
 
 t = turtle
 t.bgcolor("light green")
