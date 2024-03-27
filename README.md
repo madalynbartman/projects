@@ -25,6 +25,9 @@ https://www.youtube.com/@Frankslaboratory
 Free classes, tips, projects:
 https://www.youtube.com/freecodecamp
 
+Southern python:
+https://www.youtube.com/@TheBuffED
+
 
 *************************************
 * Playlists                         *
@@ -52,6 +55,10 @@ https://www.youtube.com/watch?v=pDnjLqExT4s
 
 Fractal Art in Python:
 https://www.youtube.com/watch?v=_ABdBoW4DV8
+
+Cool generative art in python (water color, solar system, etc):
+https://www.youtube.com/playlist?list=PLvN5Z3tTxXECdJ0JAyjtF46yorZJOw5nx
+
 
 DS & Algos
 
