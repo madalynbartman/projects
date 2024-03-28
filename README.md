@@ -103,11 +103,13 @@ https://www.youtube.com/watch?v=QUT1VHiLmmI
 Data Science courses and fun projects on free code camp:
 https://duckduckgo.com/?q=free+code+camp+data+analysis+with+pyhton&atb=v415-1&iax=videos&ia=videos&iai=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DGPVsHOlRBBI
 
+Intro to Data Analysis (Numpy, pandas, matplotlib, seaborn):
+https://www.youtube.com/watch?v=r-uOLxNrNk8
+
 Pandas and Python for Data Analysis by example:
+(4 hours of projects in data wars by smae guy as above)
 https://www.youtube.com/watch?v=gtjxAH8uaP0
 
-Data Analysis (Numpy, pandas, matplotlib, seaborn) by same guy:
-https://www.youtube.com/watch?v=gtjxAH8uaP0
 
 Actual Data Analysis with Python course on free code camp:
 https://www.freecodecamp.org/learn/data-analysis-with-python/#data-analysis-with-python-course
