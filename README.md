@@ -44,6 +44,9 @@ JavaScript projects:
 https://www.youtube.com/watch?v=E3XxeE7NF30
 https://www.youtube.com/watch?v=ZIw7QGVwaNI
 
+Tron Game:
+https://github.com/hunterjkey/Pygame-Tron/blob/master/Tron.py
+
 Art 
 
 Generative art in vanilla python
@@ -61,6 +64,9 @@ https://www.youtube.com/playlist?list=PLvN5Z3tTxXECdJ0JAyjtF46yorZJOw5nx
 
 Generative art mix (python)
 https://www.youtube.com/playlist?list=PLCz9e4J1cEoydocVfk9HYdXIxESLfb0wm
+
+Generating the Rings of Power theme in python (2D random walk)
+https://www.youtube.com/watch?v=oYnfDcU33i4
 
 
 DS & Algos
