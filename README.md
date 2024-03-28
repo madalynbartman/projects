@@ -68,6 +68,9 @@ https://www.youtube.com/playlist?list=PLCz9e4J1cEoydocVfk9HYdXIxESLfb0wm
 Generating the Rings of Power theme in python (2D random walk)
 https://www.youtube.com/watch?v=oYnfDcU33i4
 
+Generative Art (Python0:
+https://www.youtube.com/playlist?list=PLVOI8k9AArsdF2Hizssnm9ncO513I9GSn)
+
 
 DS & Algos
 
