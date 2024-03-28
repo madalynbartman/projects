@@ -37,6 +37,12 @@ class Ship:
     def draw(self, window):
         window.blit(self.ship_img, (self.x, self.y))
 
+    def get_width(self):
+        return self.ship_img.get_width()
+    
+    def get_height(self):
+        return self.ship_img.get_height()
+
 class Player(Ship):
     def __init__(self, x, y, health=100):
         super().__init__(x, y, health)
@@ -86,11 +92,11 @@ def main():
         keys = pygame.key.get_pressed()
         if keys[pygame.K_a] and player.x - player_vel > 0: # left
             player.x -= player_vel
-        if keys[pygame.K_d] and player.x + player_vel + 50 < WIDTH: # right
+        if keys[pygame.K_d] and player.x + player_vel + player.get_width() < WIDTH: # right
             player.x += player_vel
         if keys[pygame.K_w] and player.y - player_vel > 0: # up
             player.y == player_vel
-        if keys[pygame.K_s] and player.y + player_vel + 50 < HEIGHT: # down
+        if keys[pygame.K_s] and player.y + player_vel + player.get_height() < HEIGHT: # down
             player.y += player_vel
 
 main()
