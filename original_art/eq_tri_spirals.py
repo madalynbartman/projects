@@ -8,7 +8,7 @@ t.fillcolor("white")
 t.shape("turtle")
 
 
-# draw eq trianle
+# draw eq triangle
 def draw_eq():
     t.begin_fill()
     for i in range(3):
