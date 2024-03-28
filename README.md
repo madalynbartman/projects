@@ -59,6 +59,9 @@ https://www.youtube.com/watch?v=_ABdBoW4DV8
 Cool generative art in python (water color, solar system, etc):
 https://www.youtube.com/playlist?list=PLvN5Z3tTxXECdJ0JAyjtF46yorZJOw5nx
 
+Generative art mix (python)
+https://www.youtube.com/playlist?list=PLCz9e4J1cEoydocVfk9HYdXIxESLfb0wm
+
 
 DS & Algos
 
