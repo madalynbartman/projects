@@ -203,3 +203,9 @@ skyrim: 381 hours
 inquisition: 183 hours (72 first playthrough, 112 second)
 ESO: 148.5 hours
 Steam: 1,927(not counting offline or TF2 account)
+
+Study tracker:
+Python: 77 hours
+Java: 50 hours
+AWS: 26 hours
+BASH: 16 hours
