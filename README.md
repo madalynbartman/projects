@@ -17,7 +17,6 @@ https://www.youtube.com/@codingcassowary6391
 
 Computational thinking and python for data analysis:
 https://www.youtube.com/@gilesmcmullen 
-http://www.cs.cmu.edu/afs/cs/usr/wing/www/publications/Wing06.pdf
 
 Generative art in vanilla JavaScript:
 https://www.youtube.com/@Frankslaboratory
@@ -32,6 +31,25 @@ https://www.youtube.com/@TheBuffED
 *************************************
 * Playlists                         *
 *************************************
+Computational thinking:
+
+How to think like a programmer for beginners by prof Andy Harris
+(excellent)
+https://www.youtube.com/watch?v=azcrPFhaY9k
+
+If you're struggling to learn to code, you must watch this 
+by Giles McMullen
+(reassuring)
+https://www.youtube.com/watch?v=3M3TX7TGdgs
+
+Computational thinking by Jeannette Wing:
+(inspirational)
+http://www.cs.cmu.edu/afs/cs/usr/wing/www/publications/Wing06.pdf
+
+Problem Solving Techniques by Tim
+(practical)
+https://www.youtube.com/watch?v=r4TgqWbKRtA
+
 
 Projects
 
