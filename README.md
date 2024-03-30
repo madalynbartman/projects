@@ -209,3 +209,12 @@ Python: 77 hours
 Java: 50 hours
 AWS: 26 hours
 BASH: 16 hours
+
+
+Replace gaming with coding:
+How To Replace Video Games With Coding by bigboxSWE
+https://www.youtube.com/watch?v=jclr0N6mvUI
+How I replaced gaming with coding by LMI
+https://www.youtube.com/watch?v=qBC6VHhj64c4
+How I Replaced Gaming With Coding by DB
+https://www.youtube.com/watch?v=2zBtRiCsaQA
