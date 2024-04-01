@@ -3,8 +3,6 @@ import os
 # Make a script that will list directories and find a specific one
 # If dir we want is not there, make it
 
-print(os.getcwd())
-
 # Ask user for the name of the directory they want to find
 print("Enter the name of the directory you'd like like to search for: ")
 dir_name = str(input(""))
