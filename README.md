@@ -32,7 +32,6 @@ SWE advice, full stack (mainly fe), some python
 https://www.youtube.com/@Smoljames
 
 
-
 *************************************
 * Playlists                         *
 *************************************
