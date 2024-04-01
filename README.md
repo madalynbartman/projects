@@ -191,6 +191,29 @@ https://www.youtube.com/watch?v=ujTCoH21GlA&list=PLzMcBGfZo4-mP7qA9cagf68V06sko5
 Algorithmic Trading with ML in Python:
 https://www.youtube.com/watch?v=9Y3yaoi9rUQ
 
+Elastic:
+The Python Elasticsearch Series:
+https://www.youtube.com/playlist?list=PL_mJOmq4zsHa6jK_er1o2gSHStyCX5ghC
+
+Kafka:
+Intro to Confluent-Kafka Python
+https://www.youtube.com/playlist?list=PLa7VYi0yPIH1odVnZC430071CVD_4Sx1e
+
+Kafka and Python:
+https://www.youtube.com/watch?v=qbROwuuDOJA&pp=ygUccHl0aG9uIGZvciBlbGFzdGljIGFuZCBrYWZrYQ%3D%3D
+
+Kafka for Python Developers:
+https://www.youtube.com/watch?v=T7wFana-GYE&list=PLjfRmoYoxpNrs0VmIq6mOTqXP52RfZdRf
+
+Kafka in Python:
+https://www.youtube.com/watch?v=LHNtL4zDBuk&pp=ygUccHl0aG9uIGZvciBlbGFzdGljIGFuZCBrYWZrYQ%3D%3Ds
+
+Build a Reactive Data Streaming App with Python and Apache Kafka | Coding In Motion:
+https://www.youtube.com/watch?v=jItIQ-UvFI4&pp=ygUccHl0aG9uIGZvciBlbGFzdGljIGFuZCBrYWZrYQ%3D%3D
+
+Elastic Search and Kibana in 75 Minutes:
+https://www.youtube.com/watch?v=C-JKcMM6IXE
+
 *************************************
 * Books                             *
 *************************************
