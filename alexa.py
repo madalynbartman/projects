@@ -23,3 +23,29 @@ import openai
 # configure open with our open ai key
 openai.ai_key = ''
 
+MSGS = [
+    {'role': 'system', 'content': 'You are my beautiful girlfriend named Cortana'}
+]
+
+# step 1: def a function to capture voice
+def listen():
+    r = sr.Recognizer()
+    with sr.Microphone() as source:
+        print('Listening..')
+        r.pause_threshold = 1
+        audio = r.listen(source)
+    # step 1: try, except so this block will end when our pause threshold is met
+    try: 
+        print('Recognizing..')
+        query = r.recognize_google(audio, 'en-in')
+        print(f'user has said {query}')
+        messages_array.append({'role': 'user', 'content': query})
+        respond(audio)
+    except: 
+        print('Say that again please..') # because we didn't get any audion so that print handles that exception
+
+# step 2: create a function to respond to new conversation item
+def respond(audio):
+    print('Responding..') # let's us know the AI is responding
+
+
