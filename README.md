@@ -41,6 +41,16 @@ How to think like a programmer for beginners by prof Andy Harris
 (excellent)
 https://www.youtube.com/watch?v=azcrPFhaY9k
 
+How to think like a programmer (thinking methodically & problem solving)
+- Think methodically. test & record (sci method)
+- Decomposition. Don't look at the picture, it will overwhelm you. Don't see the proect in it's entirety. Methodically break it down into it's requisite parts. Programmers don't see an application, they a piece of software that does a bunch of stuff and maybe has a user interface. Ex: building a ui: what are all the components going to be on the screen? What is the UI comprised of? Once you've broken it down into it's requisite parts, it's easier to approach building it and you can apporach tasks one by one. So then you can think what is the app going to do? The you can see the big picture. (This still happens before you start writing code, it's just a bottom up rather than top down approach). And maybe you'll wanna build it a certain way becasue you can all of the features in your head. But don't see everything as a whole, see things as little tiny pieces that they can go through and build out like a puzzle. 
+- Think algorithmically. A fancy way of saying think liek a recipie. Create a recipie to provide a specific result. 
+- what is it going to do? Be exact.
+- Don't assume the computer knows what you want it to do or can read your mind. Instead, think "in order to do this, I have to do this." You can assume the computer will do anything for you. Can't learn this in a class, need to practice.
+- can't just learn syntax. Need to learn how to make recipies (algorithums). SImimalr to How to think like a programmer for beginners by prof Andy Harris
+https://www.youtube.com/watch?v=vrmKwQ-JPTA
+- this was the second best video on this subject
+
 If you're struggling to learn to code, you must watch this 
 by Giles McMullen
 (reassuring)
@@ -57,9 +67,6 @@ https://www.youtube.com/watch?v=r4TgqWbKRtA
 Programming theory by Smoljames:
 (esp JR vs SR dev, study notes, and tutorial hell -not in this playlist :P)
 https://www.youtube.com/watch?v=ObrSuDYMl1s&list=PLNonIcU6qKdCuWq_i2ahAOMO_Q4dgA7uk&pp=iAQB
-
-How to think like a programmer (thinking methodically & problem solving)
-https://www.youtube.com/watch?v=vrmKwQ-JPTA
 
 
 Projects
