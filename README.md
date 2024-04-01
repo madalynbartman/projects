@@ -58,6 +58,9 @@ Programming theory by Smoljames:
 (esp JR vs SR dev, study notes, and tutorial hell -not in this playlist :P)
 https://www.youtube.com/watch?v=ObrSuDYMl1s&list=PLNonIcU6qKdCuWq_i2ahAOMO_Q4dgA7uk&pp=iAQB
 
+How to think like a programmer (thinking methodically & problem solving)
+https://www.youtube.com/watch?v=vrmKwQ-JPTA
+
 
 Projects
 
