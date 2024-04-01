@@ -27,6 +27,11 @@ https://www.youtube.com/freecodecamp
 Southern python:
 https://www.youtube.com/@TheBuffED
 
+Smoljames:
+SWE advice, full stack (mainly fe), some python
+https://www.youtube.com/@Smoljames
+
+
 
 *************************************
 * Playlists                         *
