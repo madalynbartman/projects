@@ -76,6 +76,9 @@ https://www.youtube.com/watch?v=ZIw7QGVwaNI
 Tron Game:
 https://github.com/hunterjkey/Pygame-Tron/blob/master/Tron.py
 
+Interactive AI:
+https://www.youtube.com/watch?v=8e3OnvaEZEI&list=PLNonIcU6qKdBGHTgMKGAsIry58GXdRNzZ&index=52
+
 Art 
 
 Generative art in vanilla python
