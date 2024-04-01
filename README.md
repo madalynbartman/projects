@@ -131,6 +131,14 @@ https://www.youtube.com/playlist?list=PLmzkEJ1Zz_uZoMpSdb1b2ULdTeY4d8BMa
 DS & Algos in python (FCC):
 https://www.youtube.com/watch?v=pkYVOmU3MgA
 
+9 algos to know:
+(best concise theoretical explanation)
+https://www.youtube.com/watch?v=Uym4-KhP3Lc
+
+4 data structures to know:
+(best concise theoretical explanation)
+https://www.youtube.com/watch?v=y7ksXLhuy-w
+
 Data Analysis
 
 NumPy Tutorials:
