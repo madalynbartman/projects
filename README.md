@@ -2,7 +2,7 @@ Resources:
 
 
 *************************************
-* Channels                          *
+Channels                          
 *************************************
 
 
@@ -31,9 +31,11 @@ Smoljames:
 SWE advice, full stack (mainly fe), some python
 https://www.youtube.com/@Smoljames
 
+Relatable dev, INTPish. Ds & algos theory, visualizations, practical examples, and swe ideaology.
+https://www.youtube.com/@fknight
 
 *************************************
-* Playlists                         *
+Playlists                         
 *************************************
 Computational thinking:
 
@@ -139,6 +141,14 @@ https://www.youtube.com/watch?v=Uym4-KhP3Lc
 (best concise theoretical explanation)
 https://www.youtube.com/watch?v=y7ksXLhuy-w
 
+3 more data structures to know:
+(best concise theoretical explanation)
+https://www.youtube.com/watch?v=2EQ9WswHJ6A
+
+The Data Structure You Use Matters a Lot:
+(same dude as above - ForrestKnight)
+https://www.youtube.com/watch?v=VpnZnFUHhIU
+
 Data Analysis
 
 NumPy Tutorials:
@@ -192,10 +202,15 @@ Algorithmic Trading with ML in Python:
 https://www.youtube.com/watch?v=9Y3yaoi9rUQ
 
 Elastic:
+
 The Python Elasticsearch Series:
 https://www.youtube.com/playlist?list=PL_mJOmq4zsHa6jK_er1o2gSHStyCX5ghC
 
 Kafka:
+
+Kafka Connect to Elasticsearch
+https://www.youtube.com/watch?v=Cq-2eGxOCc8
+
 Intro to Confluent-Kafka Python
 https://www.youtube.com/playlist?list=PLa7VYi0yPIH1odVnZC430071CVD_4Sx1e
 
@@ -215,7 +230,7 @@ Elastic Search and Kibana in 75 Minutes:
 https://www.youtube.com/watch?v=C-JKcMM6IXE
 
 *************************************
-* Books                             *
+Books                             
 *************************************
 
 Make Art With Python by Kirk Kaiser
@@ -224,7 +239,7 @@ https://www.makeartwithpython.com/book/introduction
 
 
 *************************************
-* Misc                              *
+Misc                              
 *************************************
 
 
