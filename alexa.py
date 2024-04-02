@@ -37,7 +37,7 @@ def listen():
     # step 1: try, except so this block will end when our pause threshold is met
     try: 
         print('Recognizing..')
-        query = r.recognize_google(audio, language:'en-in') # set language parameter to english
+        query = r.recognize_google(audio, language='en-in') # set language parameter to english
         print(f'user has said {query}')
         MSGS.append({'role': 'user', 'content': query})
         respond(audio)
