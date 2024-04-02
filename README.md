@@ -285,3 +285,20 @@ How I replaced gaming with coding by LMI
 https://www.youtube.com/watch?v=qBC6VHhj64c4
 How I Replaced Gaming With Coding by DB
 https://www.youtube.com/watch?v=2zBtRiCsaQA
+
+
+Blogs
+
+
+Wisdom Wednesdays by Joss Visser (Google):
+Why Python is terrible...
+https://josvisser.substack.com/p/why-python-is-terrible?sd=pf
+Why Python is amazing...
+https://josvisser.substack.com/p/why-python-is-amazing
+Why programming is hard
+https://medium.com/@josvisser/why-programming-is-hard-90cb7ff06dcf
+It's the community, stupid!
+https://josvisser.substack.com/p/its-the-community-stupid
+
+Dev Notes by Forrest Knight & Meghanadh Vasireddy:
+https://www.devnotesdaily.com/
