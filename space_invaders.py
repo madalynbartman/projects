@@ -51,7 +51,7 @@ class Player(Ship):
         self.mask = pygame.mask.from_surface(self.ship_img)
         self.max_health = health
 
-class EnemyShip(Ship):
+class Enemy(Ship):
     COLOR_MAP = {
                 "red": (RED_SPACESHIP, RED_LASER),
                 "green": (GREEN_SPACESHIP, GREEN_LASER),
@@ -126,7 +126,7 @@ def main():
             wave_length += 5
             for i in range(wave_length):
                 enemy = Enemy(random.randrange(50, WIDTH 100), random.randrange(-1500, 100), random.choice(["red", "blue", "green"]))
-                enemies.appen(enemy)
+                enemies.append(enemy)
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
