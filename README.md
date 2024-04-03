@@ -201,17 +201,33 @@ https://www.youtube.com/watch?v=ujTCoH21GlA&list=PLzMcBGfZo4-mP7qA9cagf68V06sko5
 Algorithmic Trading with ML in Python:
 https://www.youtube.com/watch?v=9Y3yaoi9rUQ
 
-Elastic:
+Python & ELK for Data Engineering
+
+How to learn Python for Data Engineering:
+(Includes projects)
+https://www.projectpro.io/article/python-for-data-engineering/592
+
+Eland: 
+(Python client for data analysis and exploration)
+https://www.elastic.co/elasticon/archive/2020/global/eland-a-python-client-for-data-analysis-and-exploration
+
+How to use Elasticsearch, Logstash and Kibana to visualise logs in Python in realtime:
+https://www.freecodecamp.org/news/how-to-use-elasticsearch-logstash-and-kibana-to-visualise-logs-in-python-in-realtime-acaab281c9de/
+
+Getting started with ELK in Python:
+https://dsstream.com/getting-started-with-elk-in-python/
+
+Elastic
 
 The Python Elasticsearch Series:
 https://www.youtube.com/playlist?list=PL_mJOmq4zsHa6jK_er1o2gSHStyCX5ghC
 
-Kafka:
+Kafka
 
-Kafka Connect to Elasticsearch
+Kafka Connect to Elasticsearch:
 https://www.youtube.com/watch?v=Cq-2eGxOCc8
 
-Intro to Confluent-Kafka Python
+Intro to Confluent-Kafka Python:
 https://www.youtube.com/playlist?list=PLa7VYi0yPIH1odVnZC430071CVD_4Sx1e
 
 Kafka and Python:
