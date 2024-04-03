@@ -217,6 +217,12 @@ https://www.freecodecamp.org/news/how-to-use-elasticsearch-logstash-and-kibana-t
 Getting started with ELK in Python:
 https://dsstream.com/getting-started-with-elk-in-python/
 
+SQL
+
+Python MySQL:
+(Tech with Tim)
+https://www.youtube.com/playlist?list=PLzMcBGfZo4-l5kVSNVKGO60V6RkXAVtp-
+
 Elastic
 
 The Python Elasticsearch Series:
