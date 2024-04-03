@@ -1,3 +1,5 @@
+Elastic Stack Essentials acloud guru
+
 Beats -> logstash -> elasticsearch -> kibana
 
 architecture of project in this course:
@@ -23,3 +25,27 @@ replicating wach of these shards gives us the advantage of better search through
 
 kibana:
 discover, visualize, dashboard, and manage
+
+*******************************************
+Complete Guide to Elasticsearch Udemy
+by Bo Anderson
+*****************************************
+Elasticsearch use cases:
+
+Application performance management (APM) 
+Aggrigations
+Analyze data
+Capacity mgmt
+anomality detection
+Search
+
+This course mainly focuses on search
+
+Documents:
+Data is stored as documents (similar to rows in relational databases) 
+Documents contain fields (similar to columns)
+A document is essentially a json object
+
+Since elasticsearch is distributed by nature, it's scales well and is fast
+
+
