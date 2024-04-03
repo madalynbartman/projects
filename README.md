@@ -223,6 +223,9 @@ Python MySQL:
 (Tech with Tim)
 https://www.youtube.com/playlist?list=PLzMcBGfZo4-l5kVSNVKGO60V6RkXAVtp-
 
+Python SQL project ideas:
+https://www.reddit.com/r/learnpython/comments/fuz2fi/basic_python_sql_projects/
+
 Elastic
 
 The Python Elasticsearch Series:
