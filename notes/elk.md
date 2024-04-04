@@ -91,4 +91,7 @@ Sharding:
 When you create an index, one shard is created by default and assigned to a node. 
 Shard is where documents are stored
 The number of documents a shard can hold depends on the capacity of the node
+Distributing data across shards allows us to search shards in parallel which makes the search quicker
+Can store copies (aka replica shards) of original shards (aka primary  shards) to increase fault tolerance (back ups) and improve performance of shards cause they can be searched too (like a read replica in a sense)
+
 
