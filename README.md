@@ -319,6 +319,10 @@ https://www.youtube.com/watch?v=nogh434ykF0
 Feeling Too Lazy To Code?
 (motivation is useless bigboxswe)
 https://www.youtube.com/watch?v=Ez3Nw5Tj1yU
+Question driven development
+(break outta tutorial hell bigboxswe)
+might be the most helpful video ever
+https://www.youtube.com/watch?v=343EWZS9O88
 
 
 Blogs
