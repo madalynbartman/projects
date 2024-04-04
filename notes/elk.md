@@ -82,4 +82,13 @@ Adds authentication and authorization (can integrate with LDAP, and AD plus mana
 monitor performance metrics for the ELK stack
 alerting
 
+*********************************************************
+Mini Beginner's Crash Course to Elasticsearch and Kibana
+by Lisa Jung
+*********************************************************
+
+Sharding: 
+When you create an index, one shard is created by default and assigned to a node. 
+Shard is where documents are stored
+The number of documents a shard can hold depends on the capacity of the node
 
