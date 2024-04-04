@@ -314,8 +314,12 @@ How to have fun while coding:
 (Be bored. Bigbox SWE)
 https://www.youtube.com/watch?v=tsYKn0gMN6A
 Mindset of Successful Programmers
-(practice not theory. do thebasics. constantly learn new things)
+(practice not theory. do the basics. constantly learn new things)
 https://www.youtube.com/watch?v=nogh434ykF0
+Train your mind with boredom
+(fun is relative. be bored)
+https://youtube.com/watch?v=3IfxE55gQlM
+
 
 Blogs
 
