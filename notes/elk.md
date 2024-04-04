@@ -75,4 +75,11 @@ ex: output plugin can be kafka
 A logstash pipeline is defined in a proprietary markup format that is similar to JSON
 Not just another markup language, you can add conditional statements to it and make the pipline dynamic.
 
+X-PAK:
+Adds additional features to Elasticsearch & Kibana
+Security
+Adds authentication and authorization (can integrate with LDAP, and AD plus manage users & roles)
+monitor performance metrics for the ELK stack
+alerting
+
 
