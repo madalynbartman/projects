@@ -310,7 +310,9 @@ How I replaced gaming with coding by LMI
 https://www.youtube.com/watch?v=qBC6VHhj64c4
 How I Replaced Gaming With Coding by DB
 https://www.youtube.com/watch?v=2zBtRiCsaQA
-
+How to have fun while coding:
+(Be bored. Bigbox SWE)
+https://www.youtube.com/watch?v=tsYKn0gMN6A
 
 Blogs
 
