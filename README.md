@@ -231,6 +231,20 @@ Elastic
 The Python Elasticsearch Series:
 https://www.youtube.com/playlist?list=PL_mJOmq4zsHa6jK_er1o2gSHStyCX5ghC
 
+Mini Beginner's Crash Course to Elasticsearch and Kibana
+(Official Elastic Community)
+https://www.youtube.com/playlist?list=PL_mJOmq4zsHbcdoeAwNWuhEWwDARMMBta
+
+Beginner's Crash Course to Elastic Stack
+(Official Elastic Community)
+https://www.youtube.com/playlist?list=PL_mJOmq4zsHZYAyK606y7wjQtC0aoE6Es
+
+Elasticsearch Complete Tutorial With Python
+https://www.youtube.com/playlist?list=PLI8raxzYtfGxIjoyi5kVdYGG0r5yqQPAF
+
+Elastic Search and Kibana in 75 Minutes:
+https://www.youtube.com/watch?v=C-JKcMM6IXE
+
 Kafka
 
 Kafka Connect to Elasticsearch:
@@ -251,8 +265,6 @@ https://www.youtube.com/watch?v=LHNtL4zDBuk&pp=ygUccHl0aG9uIGZvciBlbGFzdGljIGFuZ
 Build a Reactive Data Streaming App with Python and Apache Kafka | Coding In Motion:
 https://www.youtube.com/watch?v=jItIQ-UvFI4&pp=ygUccHl0aG9uIGZvciBlbGFzdGljIGFuZCBrYWZrYQ%3D%3D
 
-Elastic Search and Kibana in 75 Minutes:
-https://www.youtube.com/watch?v=C-JKcMM6IXE
 
 *************************************
 Books                             
