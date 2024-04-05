@@ -37,6 +37,8 @@ https://www.youtube.com/@fknight
 Hardware:
 Level1Techs
 https://www.youtube.com/@Level1Techs
+ShortCircuit:
+https://www.youtube.com/@ShortCircuit
 
 Linux:
 Linus Tech Tips
