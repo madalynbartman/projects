@@ -34,6 +34,14 @@ https://www.youtube.com/@Smoljames
 Relatable dev, INTPish. Ds & algos theory, visualizations, practical examples, and swe ideaology.
 https://www.youtube.com/@fknight
 
+Hardware:
+Level1Techs
+https://www.youtube.com/@Level1Techs
+
+Linux:
+Linus Tech Tips
+https://www.youtube.com/@LinusTechTips
+
 *************************************
 Playlists                         
 *************************************
