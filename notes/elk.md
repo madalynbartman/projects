@@ -100,4 +100,6 @@ Cloud services (SaaS & serverless) 30 day free trial
 Orchestration services (intermediate solution b/t self managed and serverless in terms of complexity) They are: Elastic Cloud Enterprise or Elastic Cloud on Kubernetes
 Orchestration services allow you to centrally manage multiple deployments on your infrastructure 
 
+Elastic cloud:
+
 
