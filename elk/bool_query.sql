@@ -3,6 +3,8 @@
 -- should == nice to have
 -- filter == would they fit into a yes or no category. ex: applicant is either in or not in the city with the job
 -- all of these are optional
+
+---match phrase query
 GET 1/_search
 {
     "query": {
@@ -19,7 +21,7 @@ GET 1/_search
         }
     }
 }
-
+--- bool query with must clause
 GET 1/_search
 {
     "query": {
@@ -33,6 +35,26 @@ GET 1/_search
                 {
                     "match": {
                         "category": "POLITICS"
+                    }
+                }
+            ]
+        }
+    }
+}
+-- bool query with must & must not clause
+GET 1/_search
+{
+    "query": {
+        "bool": {
+            "must": {
+                "match_phrase": {
+                    "headline": "Michelle Obama"
+                  }
+                },
+                "must_not":[
+                    {
+                    "match": {
+                        "category": "WEDDINGS"
                     }
                 }
             ]
