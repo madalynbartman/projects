@@ -9,7 +9,7 @@ GET 1/_search
     }
 }
 -- the and operator strings together multiple search terms for better results
-GET news_headlines/_search
+GET 1/_search
 {
     "query": {
         "match": {
@@ -21,7 +21,7 @@ GET news_headlines/_search
     }
 }
 -- for all the hits, at least 3 search terms need to be included in the headline
-GET news_headlines/_search
+GET 1/_search
 {
     "query": {
         "match": {
