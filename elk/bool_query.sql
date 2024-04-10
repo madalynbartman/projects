@@ -19,3 +19,23 @@ GET 1/_search
         }
     }
 }
+
+GET 1/_search
+{
+    "query": {
+        "bool": {
+            "must": [
+                {
+                "match_phrase": {
+                    "headline": "Michelle Obama"
+                }
+                },
+                {
+                    "match": {
+                        "category": "POLITICS"
+                    }
+                }
+            ]
+        }
+    }
+}
