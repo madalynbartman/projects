@@ -43,3 +43,17 @@ GET 1/_search
         }
     }
 }
+--added type param called phrase. runs match phrase query against each phrase. only pulls docs that match that phrase
+GET 1/_search
+{
+    "query": {
+        "multi_match":{
+            "query": "party planning",
+            "fields": [
+                "headline^2",
+                "short_description"
+            ],
+            "type": "phrase"
+        }
+    }
+}
