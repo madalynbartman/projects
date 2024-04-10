@@ -2,7 +2,7 @@
 -- ex seraching for michelle obama. Do they want publications by her or about her?
 -- you can include results with her in author field as well as the headline and description field
 
---regular query
+--multi-match query
 GET 1/_searchquery
 {
     "query":{
@@ -16,7 +16,7 @@ GET 1/_searchquery
         }
     }
 }
---boost the score of documents that have michelle obama in the headline
+--per-field boosting. boost the score of documents that have michelle obama in the headline
 GET 1/_searchquery
 {
     "query":{
@@ -30,7 +30,7 @@ GET 1/_searchquery
         }
     }
 }
-
+-- greater recall less precision
 GET 1/_search
 {
     "query": {
@@ -43,7 +43,7 @@ GET 1/_search
         }
     }
 }
---added type param called phrase. runs match phrase query against each phrase. only pulls docs that match that phrase
+--added a phrase type match to improve precision. runs match phrase query against each phrase. only pulls docs that match that phrase
 GET 1/_search
 {
     "query": {
