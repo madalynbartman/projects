@@ -137,4 +137,6 @@ A score is computed from multiple factors but only focusing on two in this cours
 Term frequency and inverse document frequency determines how many times each search term appears in a document.
 If search terms are found in high frequency in a document, the document is considered more relvenat to the search query.
 
+Data:
+Import your data using the file data visualizer
 
