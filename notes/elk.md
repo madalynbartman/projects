@@ -139,4 +139,6 @@ If search terms are found in high frequency in a document, the document is consi
 
 Data:
 Import your data using the file data visualizer
+Elastic limits the total number of hits to 10K for speed
+Can get exact total number of hits by setting track total hits to true in your query
 
