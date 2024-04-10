@@ -31,3 +31,15 @@ GET 1/_searchquery
     }
 }
 
+GET 1/_search
+{
+    "query": {
+        "multi_match":{
+            "query": "party planning",
+            "fields": [
+                "headline^2",
+                "short_description"
+            ]
+        }
+    }
+}
