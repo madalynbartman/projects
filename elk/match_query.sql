@@ -20,3 +20,4 @@ GET 1/_search
         }
     }
 }
+--match phrase increases precision but reduces recall
