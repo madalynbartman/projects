@@ -16,3 +16,15 @@ GET 1/_search
         }
     }
 }
+
+GET 1/_search
+{
+    "aggs": {
+        "by_category": {
+            "terms": {
+                "field": "category",
+                "size": 100
+            }
+        }
+    }
+}
