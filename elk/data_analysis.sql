@@ -28,3 +28,19 @@ GET 1/_search
         }
     }
 }
+
+GET 1/_search
+{
+    "query": {
+        "match": {
+            "category": "ENTERTAINMENT"
+        }
+    },
+    "aggregations": {
+        "popular_in_entertainment": {
+            "significant_text": {
+                "field": "headline"
+            }
+        }
+    }
+}
