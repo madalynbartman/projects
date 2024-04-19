@@ -21,3 +21,5 @@ GET ecommerce_data/_search
         }
     }
 }
+
+-- bucket aggregations allow you to aggregate on several subsets of documents
