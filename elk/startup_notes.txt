@@ -1,0 +1,13 @@
+startup
+systemctl daemon-reload (inital only)
+systemctl enable elastic.service (inital only)
+systemctl start elastic.service
+systemctl status elastic.service
+
+systemctl enable kibana.service (inital only)
+systemctl start kibana.service
+systemctl status kibana.service
+
+
+dev tools
+http://localhost:5601/app/dev_tools#/console
