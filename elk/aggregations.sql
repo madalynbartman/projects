@@ -117,3 +117,28 @@ GET ecommerce_data/_search
     }
   }
 }
+
+-- specify range
+GET ecommerce_data/_search
+{
+  "size": 0,
+  "aggs": {
+    "transactions_per_custom_price_ranges": {
+      "range": {
+        "field": "UnitPrice",
+        "ranges": [
+          {
+            "to": 50
+          },
+          {
+            "from": 50,
+            "to": 200
+          },
+          {
+            "from": 200
+          }
+        ]
+      }
+    }
+  }
+}
