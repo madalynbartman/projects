@@ -100,3 +100,20 @@ GET ecommerce_data/_search
     }
   }
 }
+
+-- can add order below interval
+GET ecommerce_data/_search
+{
+  "size": 0,
+  "aggs": {
+    "transactions_per_price_interval": {
+      "histogram": {
+        "field": "UnitPrice",
+        "interval": 10,
+        "order": {
+          "_key": "desc"
+        }
+      }
+    }
+  }
+}
