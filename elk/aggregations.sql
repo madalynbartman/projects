@@ -10,7 +10,7 @@ GET ecommerce_data/_search
     "size": 0,
     "query": {
         "match": {
-            "Country": "Germany"
+            "Country": "Germany"}
         }
     },
     "eggs": {
@@ -36,6 +36,20 @@ GET ecommerce_data/_search
         "germany_average_unit_price":{
             "avg": {
                 "field": "UnitPrice"
+            }
+        }
+    }
+}
+
+-- fixed interval = interval length is always constant
+GET ecommerce_data/_search
+{
+    "size": 0, 
+    "aggs": {
+        "transactions_by_8_hrs": {
+            "date_histogram": {
+                "field": "InvoiceDate",
+                "fixed_interval": "8h"
             }
         }
     }
