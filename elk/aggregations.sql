@@ -142,3 +142,17 @@ GET ecommerce_data/_search
     }
   }
 }
+
+-- terms aggregations
+GET ecommerce_data/_search
+{
+  "size": 0,
+  "aggs": {
+    "top_5_customers": {
+      "terms": {
+        "field": "CustomerID",
+        "size": 5
+      }
+    }
+  }
+}
