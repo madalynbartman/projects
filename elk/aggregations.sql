@@ -86,3 +86,17 @@ GET ecommerce_data/_search
     }
   }
 }
+
+-- increase my interval (increments of 10 in this ex)
+GET ecommerce_data/_search
+{
+  "size": 0,
+  "aggs": {
+    "transactions_per_price_interval": {
+      "histogram": {
+        "field": "UnitPrice",
+        "interval": 10
+      }
+    }
+  }
+}
