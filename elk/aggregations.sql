@@ -69,3 +69,20 @@ GET ecommerce_data/_search
     }
   }
 }
+
+-- optional param - order = sort based in key values (in descending order in this ex)
+GET ecommerce_data/_search
+{
+  "size": 0,
+  "aggs": {
+    "transactions_by_month": {
+      "date_histogram": {
+        "field": "InvoiceDate",
+        "calendar_interval": "1M",
+        "order": {
+          "_key": "desc"
+        }
+      }
+    }
+  }
+}
