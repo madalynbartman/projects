@@ -54,3 +54,18 @@ GET ecommerce_data/_search
         }
     }
 }
+
+-- calendar interval = interval may vary
+-- monthly
+GET ecommerce_data/_search
+{
+  "size": 0,
+  "aggs": {
+    "transactions_by_month": {
+      "date_histogram": {
+        "field": "InvoiceDate",
+        "calendar_interval": "1M"
+      }
+    }
+  }
+}
