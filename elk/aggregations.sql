@@ -156,3 +156,20 @@ GET ecommerce_data/_search
     }
   }
 }
+
+-- terms aggregations sorted in ascending order
+GET ecommerce_data/_search
+{
+  "size": 0,
+  "aggs": {
+    "5_customers_with_lowest_number_of_transactions": {
+      "terms": {
+        "field": "CustomerID",
+        "size": 5,
+        "order": {
+          "_count": "asc"
+        }
+      }
+    }
+  }
+}
