@@ -173,3 +173,26 @@ GET ecommerce_data/_search
     }
   }
 }
+
+
+GET ecommerce_data/_search
+{
+  "size": 0,
+  "aggs": {
+    "transactions_per_day": {
+      "date_histogram": {
+        "field": "InvoiceDate",
+        "calendar_interval": "day"
+      },
+      "aggs": {
+        "daily_revenue": {
+          "sum": {
+            "script": {
+              "source": "doc['UnitPrice'].value * doc['Quantity'].value"
+            }
+          }
+        }
+      }
+    }
+  }
+}
