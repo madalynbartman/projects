@@ -61,3 +61,23 @@ GET 1/_search
         }
     }
 }
+-- should clauses
+GET Enter_name_of_the_index_here/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+        "Enter match or match_phrase here: {
+          "Enter the name of the field": "Enter the value you are looking for" 
+         }
+        },
+       "should":[
+         {
+          "Enter match or match_phrase here": {
+            "Enter the name of the field": "Enter the value you are looking for"
+          }
+        }
+      ]
+    }
+  }
