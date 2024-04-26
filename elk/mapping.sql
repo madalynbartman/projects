@@ -17,3 +17,5 @@ POST temp_index/_doc
     "preferred_vendor": true
   }
 }
+-- view the mapping
+GET temp_index/_mapping
