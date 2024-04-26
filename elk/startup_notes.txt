@@ -1,10 +1,11 @@
 startup
-systemctl daemon-reload (inital only)
-systemctl enable elastic.service (inital only)
+systemctl daemon-reload
+systemctl enable elastic.service 
 systemctl start elastic.service
 systemctl status elastic.service
+curl http://localhost:9200
 
-systemctl enable kibana.service (inital only)
+systemctl enable kibana.service 
 systemctl start kibana.service
 systemctl status kibana.service
 
