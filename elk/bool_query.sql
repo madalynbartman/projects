@@ -82,6 +82,38 @@ GET Enter_name_of_the_index_here/_search
     }
   }
 
+GET news_headlines/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match_phrase": {
+            "headline": "Michelle Obama"
+          }
+        }
+      ],
+      "should": [
+        {
+          "match": {
+            "headline": "Becoming"
+          }
+        },
+        {
+          "match": {
+            "headline": "women"
+          }
+        },
+        {
+          "match": {
+            "headline": "empower"
+          }
+        }
+      ]
+    }
+  }
+}
+
 -- filter clauses 
 GET Enter_name_of_the_index_here/_search
 {
