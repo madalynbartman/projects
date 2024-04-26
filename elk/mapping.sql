@@ -99,3 +99,24 @@ POST produce_index/_doc
     "preferred_vendor": true
   }
 }
+
+POST produce_index/_doc
+{
+  "name": "Mango",
+  "botanical_name": "Harum Manis",
+  "produce_type": "Fruit",
+  "country_of_origin": "Indonesia",
+  "organic": true,
+  "date_purchased": "2020-05-02T07:15:35",
+  "quantity": 500,
+  "unit_price": 1.5,
+  "description": "Mango Arumanis or Harum Manis is originated from East Java. Arumanis means harum dan manis or fragrant and sweet just like its taste. The ripe Mango Arumanis has dark green skin coated with thin grayish natural wax. The flesh is deep yellow, thick, and soft with little to no fiber. Mango Arumanis is best eaten when ripe.",
+  "vendor_details": {
+    "vendor": "Ayra Shezan Trading",
+    "main_contact": "Suharto",
+    "vendor_location": "Binjai, Indonesia",
+    "preferred_vendor": true
+  }
+}
+
+GET produce_index/_mapping
