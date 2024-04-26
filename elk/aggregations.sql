@@ -4,7 +4,10 @@ name these aggregations germany_average_unit_price,
 then get the avg of all values of the field UnitPrice over all query documents,
 this in turn will tell us the avg unit price of items sold in germany. */
 
--- this query clasue allows us to perform aggregations on a subset of documents
+-- metrics aggregations
+GET ecommerce_data/_search
+
+-- this query clause allows us to perform aggregations on a subset of documents
 GET ecommerce_data/_search
 {
     "size": 0,
