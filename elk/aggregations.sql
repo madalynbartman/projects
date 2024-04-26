@@ -43,6 +43,18 @@ GET ecommerce_data/_search
   }
 }
 
+GET ecommerce_data/_search
+{
+  "size": 0,
+  "aggs": {
+    "highest_unit_price": {
+      "max": {
+        "field": "UnitPrice"
+      }
+    }
+  }
+}
+
 -- this query clause allows us to perform aggregations on a subset of documents
 GET ecommerce_data/_search
 {
