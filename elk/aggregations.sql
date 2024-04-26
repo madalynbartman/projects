@@ -7,6 +7,17 @@ this in turn will tell us the avg unit price of items sold in germany. */
 -- metrics aggregations
 GET ecommerce_data/_search
 
+GET ecommerce_data/_search
+{
+  "aggs": {
+    "sum_unit_price": {
+      "sum": {
+        "field": "UnitPrice"
+      }
+    }
+  }
+}
+
 -- this query clause allows us to perform aggregations on a subset of documents
 GET ecommerce_data/_search
 {
