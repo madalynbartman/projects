@@ -19,6 +19,7 @@ GET ecommerce_data/_search
 }
 
 -- metircs with a size parameter
+-- sum
 GET ecommerce_data/_search
 {
   "size": 0,
@@ -31,6 +32,7 @@ GET ecommerce_data/_search
   }
 }
 
+-- min
 GET ecommerce_data/_search
 {
   "size": 0,
@@ -43,12 +45,26 @@ GET ecommerce_data/_search
   }
 }
 
+-- max
 GET ecommerce_data/_search
 {
   "size": 0,
   "aggs": {
     "highest_unit_price": {
       "max": {
+        "field": "UnitPrice"
+      }
+    }
+  }
+}
+
+-- avg
+GET ecommerce_data/_search
+{
+  "size": 0,
+  "aggs": {
+    "average_unit_price": {
+      "avg": {
         "field": "UnitPrice"
       }
     }
