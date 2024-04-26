@@ -105,3 +105,26 @@ GET Enter_name_of_the_index_here/_search
     }
   }
 }
+
+GET news_headlines/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+        "match_phrase": {
+          "headline": "Michelle Obama"
+          }
+         }
+        ],
+       "filter":{
+          "range":{
+             "date": {
+               "gte": "2014-03-25",
+               "lte": "2016-03-25"
+          }
+        }
+      }
+    }
+  }
+}
