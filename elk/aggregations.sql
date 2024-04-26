@@ -71,6 +71,19 @@ GET ecommerce_data/_search
   }
 }
 
+-- stats
+GET ecommerce_data/_search
+{
+  "size": 0,
+  "aggs": {
+    "all_stats_unit_price": {
+      "stats": {
+        "field": "UnitPrice"
+      }
+    }
+  }
+}
+
 -- this query clause allows us to perform aggregations on a subset of documents
 GET ecommerce_data/_search
 {
