@@ -165,3 +165,15 @@ PUT produce_v2
     }
   }
 }
+
+GET produce_v2/_mapping
+
+POST _reindex
+{
+  "source": {
+    "index": "produce_index"
+  },
+  "dest": {
+    "index": "produce_v2"
+  }
+}
