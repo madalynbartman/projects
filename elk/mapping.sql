@@ -168,6 +168,7 @@ PUT produce_v2
 
 GET produce_v2/_mapping
 
+-- reindex
 POST _reindex
 {
   "source": {
@@ -175,5 +176,18 @@ POST _reindex
   },
   "dest": {
     "index": "produce_v2"
+  }
+}
+
+-- create a runtime field for total
+PUT produce_v2/_mapping
+{
+  "runtime": {
+    "total": {
+      "type": "double",
+      "script": {
+        "source": "emit(doc['unit_price'].value* doc['quantity'].value)"
+      }
+    }
   }
 }
