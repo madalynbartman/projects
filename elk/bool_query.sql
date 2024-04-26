@@ -81,3 +81,27 @@ GET Enter_name_of_the_index_here/_search
       ]
     }
   }
+
+-- filter clauses 
+GET Enter_name_of_the_index_here/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+        "Enter match or match_phrase here": {
+          "Enter the name of the field": "Enter the value you are looking for" 
+         }
+        }
+        ],
+       "filter":{
+          "range":{
+             "date": {
+               "gte": "Enter lowest value of the range here",
+               "lte": "Enter highest value of the range here"
+          }
+        }
+      }
+    }
+  }
+}
