@@ -31,6 +31,18 @@ GET ecommerce_data/_search
   }
 }
 
+GET ecommerce_data/_search
+{
+  "size": 0,
+  "aggs": {
+    "lowest_unit_price": {
+      "min": {
+        "field": "UnitPrice"
+      }
+    }
+  }
+}
+
 -- this query clause allows us to perform aggregations on a subset of documents
 GET ecommerce_data/_search
 {
