@@ -37,3 +37,6 @@ POST test_index/_doc
     "preferred_vendor": true
   }
 }
+
+GET test_index/_mapping
+
