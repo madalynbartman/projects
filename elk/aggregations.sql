@@ -84,6 +84,20 @@ GET ecommerce_data/_search
   }
 }
 
+
+-- cardinality
+GET ecommerce_data/_search
+{
+  "size": 0,
+  "aggs": {
+    "number_unique_customers": {
+      "cardinality": {
+        "field": "CustomerID"
+      }
+    }
+  }
+}
+
 -- this query clause allows us to perform aggregations on a subset of documents
 GET ecommerce_data/_search
 {
