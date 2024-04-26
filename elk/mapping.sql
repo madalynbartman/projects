@@ -191,3 +191,19 @@ PUT produce_v2/_mapping
     }
   }
 }
+
+-- check the mapping
+GET produce_v2/_mapping
+
+-- put it to the test
+GET produce_v2/_search
+{
+  "size": 0,
+  "aggs": {
+    "total_expense": {
+      "sum": {
+        "field": "total"
+      }
+    }
+  }
+}
