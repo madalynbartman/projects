@@ -120,3 +120,48 @@ POST produce_index/_doc
 }
 
 GET produce_index/_mapping
+
+PUT produce_v2
+{
+  "mappings": {
+    "properties": {
+      "botanical_name": {
+        "type": "text"
+      },
+      "country_of_origin": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "date_purchased": {
+        "type": "date"
+      },
+      "description": {
+        "type": "text"
+      },
+      "name": {
+        "type": "text"
+      },
+      "organic": {
+        "type": "boolean"
+      },
+      "produce_type": {
+        "type": "keyword"
+      },
+      "quantity": {
+        "type": "long"
+      },
+      "unit_price": {
+        "type": "float"
+      },
+      "vendor_details": {
+        "type": "object",
+        "enabled": false
+      }
+    }
+  }
+}
