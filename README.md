@@ -321,7 +321,7 @@ Steam: 1,927(not counting offline or TF2 account)
 Study tracker: 224 study hours 
 Python: 77 hours
 Java: 50 hours
-Linux Command Line: 33.5 hours
+Linux: 33.5 hours
 AWS: 26 hours
 Docker, Helm, Kube: 20.5 hours
 BASH scripting: 16 hours
