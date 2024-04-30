@@ -325,7 +325,7 @@ Linux Command Line: 29 hours
 AWS: 26 hours
 Docker, Helm, Kube: 20.5 hours
 BASH scripting: 16 hours
-JavaScript: 5.55 hours
+JavaScript: 5.5 hours
 Argo: 5.5 hours
 
 
