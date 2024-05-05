@@ -327,7 +327,7 @@ Docker, Helm, Kube: 20.5 hours
 BASH scripting: 16 hours
 JavaScript: 5.5 hours
 Argo: 5.5 hours
-Ansible: 3
+Ansible: 3.5
 
 
 Replace gaming with coding:
