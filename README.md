@@ -330,6 +330,9 @@ Argo: 5.5 hours
 Ansible: 3.5
 
 
+Markers:
+AWS: 29 hours of study till I could engineer solutions off the cuff 
+
 Replace gaming with coding:
 How To Replace Video Games With Coding by bigboxSWE
 https://www.youtube.com/watch?v=jclr0N6mvUI
