@@ -74,3 +74,9 @@ was able to write original responses in hackerrank after 26 hours
 
 55  hours: original art
 wrote my first original art in python using turtle after 55 hours of study/practice
+
+************************************************
+* AWS                                          *
+************************************************
+29: hours of study till I could engineer solutions off the cuff 
+- Created a target group for our new monitoring elastic cluster
