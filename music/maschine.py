@@ -1,4 +1,4 @@
-# Learning from flokiapi's mashine repo
+# Learning from flokiapi's maschine repo
 
 import pymikro
 
