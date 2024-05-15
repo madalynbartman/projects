@@ -359,8 +359,11 @@ Active learning (MIT)
 https://www.youtube.com/watch?v=zoa2pKYp_fk
 
 Midi:
-Programming with MIDI in Python
+Programming with MIDI in Python!:
 https://www.youtube.com/watch?v=JYslZkc90GI
+
+Chords mode in OP-Z app!:
+https://www.youtube.com/watch?v=b_P6xPE4eFM
 
 Building a MIDI Controller Using Arduino
 https://www.youtube.com/watch?v=JZ5yPdoPooU
