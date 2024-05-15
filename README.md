@@ -358,6 +358,13 @@ https://www.youtube.com/watch?v=tG_ufZb7Cew&pp=ygULYmlnIGJveCBzd2U%3D
 Active learning (MIT)
 https://www.youtube.com/watch?v=zoa2pKYp_fk
 
+Midi:
+Programming with MIDI in Python
+https://www.youtube.com/watch?v=JYslZkc90GI
+
+Building a MIDI Controller Using Arduino
+https://www.youtube.com/watch?v=JZ5yPdoPooU
+
 
 Blogs
 
