@@ -365,6 +365,9 @@ https://www.youtube.com/watch?v=JYslZkc90GI
 Building a MIDI Controller Using Arduino
 https://www.youtube.com/watch?v=JZ5yPdoPooU
 
+David van Brinks MIDI guide:
+https://www.cs.cmu.edu/~music/cmsip/readings/davids-midi-spec.htm
+
 
 Blogs
 
