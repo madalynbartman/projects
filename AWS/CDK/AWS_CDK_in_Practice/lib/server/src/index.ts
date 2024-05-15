@@ -1,4 +1,5 @@
 import express from 'express';
+import dotenv from 'dotenv';
 import cors from 'cors';
 import { OkPacket } from 'mysql';
 
@@ -6,77 +7,86 @@ import { Todo } from './@types';
 
 import { execute, init } from './connections';
 
-const app = express();
+dotenv.config();
+
 const port = process.env.PORT || 80;
 
-init();
+const createApp = () => {
+  const app = express();
 
-app.use(cors());
-app.use(express.json());
+  init();
 
-app.post('/', async (req, res) => {
-  try {
-    const { todo_name, todo_description, todo_completed } = req.body.todo;
+  app.use(cors());
+  app.use(express.json());
 
-    const sql = `
-    INSERT INTO Todolist
-      (
-        \`todo_name\`,
-        \`todo_description\`,
-        \`todo_completed\`
-      )
-      VALUES
+  app.post('/', async (req, res) => {
+    try {
+      const { todo_name, todo_description, todo_completed } = req.body.todo;
+
+      const sql = `
+      INSERT INTO Todolist
         (
-          "${todo_name}",
-          "${todo_description}",
-          ${todo_completed}
-        );
-  `;
+          \`todo_name\`,
+          \`todo_description\`,
+          \`todo_completed\`
+        )
+        VALUES
+          (
+            "${todo_name}",
+            "${todo_description}",
+            ${todo_completed}
+          );
+    `;
 
-    const response = await execute<OkPacket>(sql, {});
+      const response = await execute<OkPacket>(sql, {});
 
-    const { insertId } = response;
+      const { insertId } = response;
 
-    if (!insertId) return res.status(400).send('Failed to insert todo');
+      if (!insertId) return res.status(400).send('Failed to insert todo');
 
-    const todo: Todo = {
-      id: insertId,
-      todo_completed,
-      todo_description,
-      todo_name,
-    };
+      const todo: Todo = {
+        id: insertId,
+        todo_completed,
+        todo_description,
+        todo_name,
+      };
 
-    return res.status(200).send({
-      todo,
-    });
-  } catch (err) {
-    console.log(err);
+      return res.status(200).send({
+        todo,
+      });
+    } catch (err: any) {
+      console.log(err);
 
-    return res.status(400).send({
-      message: (err as any).message,
-    });
-  }
-});
+      return res.status(400).send({
+        message: err.message,
+      });
+    }
+  });
 
-app.get('/', async (_, res) => {
-  try {
-    const sql = `SELECT * FROM Todolist;`;
+  app.get('/', async (_, res) => {
+    try {
+      const sql = `SELECT * FROM Todolist;`;
 
-    const response = await execute<Todo>(sql, {});
+      const response = await execute<Todo>(sql, {});
 
-    return res.status(200).send({ todos: response });
-  } catch (err) {
-    console.log(err);
+      return res.status(200).send({ todos: response });
+    } catch (err: any) {
+      console.log(err);
 
-    return res.status(400).send({
-      message: (err as any).message,
-    });
-  }
-});
+      return res.status(400).send({
+        message: err.message,
+      });
+    }
+  });
 
-app.get('/health', async (_, res) => {
-  return res.status(200).send({ status: 'available' });
-});
+  app.get('/health', async (_, res) => {
+    return res.status(200).send({ status: 'available' });
+  });
+
+  return app;
+};
+
+const app = createApp();
 
 const server = app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
@@ -84,3 +94,7 @@ const server = app.listen(port, () => {
 
 server.keepAliveTimeout = 30000;
 server.headersTimeout = 31000;
+
+createApp();
+
+export default createApp;

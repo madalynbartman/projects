@@ -13,7 +13,7 @@ import config from '@web/outside-config/config.json'
 /* ----------
  * Add backend URL provided by the cdk deploy here!
  * ---------- */
-const backend_url = `https://${config.backend_subdomain}.${config.domain_name}`;
+const backend_url = `https://${process.env.REACT_APP_ENV === 'Production' ? config.backend_subdomain : config.backend_dev_subdomain}.${config.domain_name}`;
 
 export const Main: React.FC = () => {
   /* ----------

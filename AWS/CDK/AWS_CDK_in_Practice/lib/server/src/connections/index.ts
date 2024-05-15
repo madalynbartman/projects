@@ -1,9 +1,12 @@
 import mysql, { Pool } from 'mysql';
+import dotenv from 'dotenv';
 import {
   GetSecretValueCommand,
   GetSecretValueCommandInput,
   SecretsManagerClient,
 } from '@aws-sdk/client-secrets-manager';
+
+dotenv.config();
 
 let pool: Pool;
 
@@ -26,7 +29,11 @@ const getSecretValue = async (secretId: string) => {
 };
 
 export const init = () => {
-  getSecretValue('chapter-4/rds/my-sql-instance')
+  console.log(
+    'SecretId: ',
+    `chapter-5/rds/my-sql-instance-${process.env.NODE_ENV}`,
+  );
+  getSecretValue(`chapter-5/rds/my-sql-instance-${process.env.NODE_ENV}`)
     .then(({ password, username, host }) => {
       pool = mysql.createPool({
         host: process.env.RDS_HOST || host,

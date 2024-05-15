@@ -12,12 +12,11 @@ import { resolve } from 'path';
 import { LogGroup, RetentionDays } from 'aws-cdk-lib/aws-logs';
 import { ARecord, RecordTarget } from 'aws-cdk-lib/aws-route53';
 import { LoadBalancerTarget } from 'aws-cdk-lib/aws-route53-targets';
-
 import { ACM } from '../ACM';
 import { Route53 } from '../Route53';
 import { RDS } from '../RDS';
 
-import { backend_subdomain, domain_name } from '../../../../config.json';
+import config from '../../../../config.json';
 
 interface Props {
   rds: RDS;
@@ -44,61 +43,90 @@ export class ECS extends Construct {
   constructor(scope: Construct, id: string, props: Props) {
     super(scope, id);
 
-    this.log_group = new LogGroup(scope, 'ECSLogGroup', {
-      logGroupName: 'ecs-logs-chapter-4',
-      retention: RetentionDays.ONE_DAY,
-      removalPolicy: RemovalPolicy.DESTROY,
-    });
-
-    this.cluster = new ecs.Cluster(scope, 'EcsCluster', { vpc: props.vpc });
-
-    this.cluster.addCapacity('DefaultAutoScalingGroup', {
-      instanceType: new InstanceType('t2.micro'),
-    });
-
-    this.task_definition = new ecs.Ec2TaskDefinition(scope, 'TaskDefinition');
-
-    this.container = this.task_definition.addContainer('Express', {
-      image: ecs.ContainerImage.fromAsset(
-        resolve(__dirname, '..', '..', '..', '..', 'server'),
-      ),
-      memoryLimitMiB: 256,
-      logging: ecs.LogDriver.awsLogs({
-        streamPrefix: 'chapter4',
-        logGroup: this.log_group,
-      }),
-      environment: {
-        RDS_HOST: props.rds.instance.instanceEndpoint.hostname,
+    this.log_group = new LogGroup(
+      scope,
+      `ECSLogGroup-${process.env.NODE_ENV || ''}`,
+      {
+        logGroupName: `ecs-logs-chapter-5-${process.env.NODE_ENV || ''}`,
+        retention: RetentionDays.ONE_DAY,
+        removalPolicy: RemovalPolicy.DESTROY,
       },
-    });
+    );
+
+    this.cluster = new ecs.Cluster(
+      scope,
+      `EcsCluster-${process.env.NODE_ENV || ''}`,
+      { vpc: props.vpc },
+    );
+
+    this.cluster.addCapacity(
+      `DefaultAutoScalingGroup-${process.env.NODE_ENV || ''}`,
+      {
+        instanceType: new InstanceType('t2.micro'),
+      },
+    );
+
+    this.task_definition = new ecs.Ec2TaskDefinition(
+      scope,
+      `TaskDefinition-${process.env.NODE_ENV || ''}`,
+    );
+
+    this.container = this.task_definition.addContainer(
+      `Express-${process.env.NODE_ENV || ''}`,
+      {
+        image: ecs.ContainerImage.fromAsset(
+          resolve(__dirname, '..', '..', '..', '..', 'server'),
+        ),
+        environment: {
+          NODE_ENV: process.env.NODE_ENV as string,
+          RDS_HOST: props.rds.instance.instanceEndpoint.hostname,
+        },
+        memoryLimitMiB: 256,
+        logging: ecs.LogDriver.awsLogs({
+          streamPrefix: `chapter5-${process.env.NODE_ENV || ''}`,
+          logGroup: this.log_group,
+        }),
+      },
+    );
 
     this.container.addPortMappings({
       containerPort: 80,
       protocol: ecs.Protocol.TCP,
     });
 
-    this.service = new ecs.Ec2Service(scope, 'Service', {
-      cluster: this.cluster,
-      taskDefinition: this.task_definition,
-    });
+    this.service = new ecs.Ec2Service(
+      scope,
+      `Service-${process.env.NODE_ENV || ''}`,
+      {
+        cluster: this.cluster,
+        taskDefinition: this.task_definition,
+      },
+    );
 
-    this.load_balancer = new ApplicationLoadBalancer(scope, 'LB', {
-      vpc: props.vpc,
-      internetFacing: true,
-      loadBalancerName: 'chapter4-lb',
-    });
+    this.load_balancer = new ApplicationLoadBalancer(
+      scope,
+      `LB-${process.env.NODE_ENV || ''}`,
+      {
+        vpc: props.vpc,
+        internetFacing: true,
+        loadBalancerName: `chapter5-lb-${process.env.NODE_ENV || ''}`,
+      },
+    );
 
-    this.listener = this.load_balancer.addListener('PublicListener', {
-      port: 443,
-      open: true,
-      certificates: [props.acm.certificate],
-    });
+    this.listener = this.load_balancer.addListener(
+      `PublicListener-${process.env.NODE_ENV || ''}`,
+      {
+        port: 443,
+        open: true,
+        certificates: [props.acm.certificate],
+      },
+    );
 
-    this.listener.addTargets('ECS', {
+    this.listener.addTargets(`ECS-${process.env.NODE_ENV || ''}`, {
       protocol: ApplicationProtocol.HTTP,
       targets: [
         this.service.loadBalancerTarget({
-          containerName: 'Express',
+          containerName: `Express-${process.env.NODE_ENV || ''}`,
           containerPort: 80,
         }),
       ],
@@ -112,12 +140,17 @@ export class ECS extends Construct {
       },
     });
 
+    const backEndSubDomain =
+      process.env.NODE_ENV === 'Production'
+        ? config.backend_subdomain
+        : config.backend_dev_subdomain;
+
     new ARecord(this, 'BackendAliasRecord', {
       zone: props.route53.hosted_zone,
       target: RecordTarget.fromAlias(
         new LoadBalancerTarget(this.load_balancer),
       ),
-      recordName: `${backend_subdomain}.${domain_name}`,
+      recordName: `${backEndSubDomain}.${config.domain_name}`,
     });
 
     new CfnOutput(scope, 'BackendURL', {
