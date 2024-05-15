@@ -1,7 +1,7 @@
 import { HostedZone, IHostedZone } from 'aws-cdk-lib/aws-route53';
 import { Construct } from 'constructs';
 
-import { domain_name } from '../../../../config.json';
+import config from '../../../../config.json';
 
 export class Route53 extends Construct {
   public readonly hosted_zone: IHostedZone;
@@ -10,7 +10,7 @@ export class Route53 extends Construct {
     super(scope, id);
 
     this.hosted_zone = HostedZone.fromLookup(scope, 'HostedZone', {
-      domainName: domain_name,
+      domainName: config.domain_name,
     });
   }
 }

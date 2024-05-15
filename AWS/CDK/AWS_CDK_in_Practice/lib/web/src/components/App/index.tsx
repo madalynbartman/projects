@@ -7,8 +7,6 @@ import { Main } from '../Main';
 import { AppContainer, MainSection } from './styles';
 
 export const App: React.FC = () => {
-  
-
   return (
     <AppContainer>
       <Header />
