@@ -1,9 +1,9 @@
 {
-  "name": "chapter-8",
+  "name": "chapter-9",
   "version": "0.1.0",
   "license": "MIT",
   "bin": {
-    "chapter-8": "bin/chapter-8.js"
+    "chapter-9": "bin/chapter-9.js"
   },
   "scripts": {
     "build:frontend": "cd ../web && yarn install && yarn build:dev",

@@ -33,8 +33,8 @@ export class ApiGateway extends Construct {
         ? config.backend_subdomain
         : config.backend_dev_subdomain;
 
-    const restApi = new RestApi(this, 'chapter-8-rest-api', {
-      restApiName: `chapter-8-rest-api-${process.env.NODE_ENV || ''}`,
+    const restApi = new RestApi(this, 'chapter-9-rest-api', {
+      restApiName: `chapter-9-rest-api-${process.env.NODE_ENV || ''}`,
       description: 'serverless api using lambda functions',
       domainName: {
         certificate: acm.certificate,
