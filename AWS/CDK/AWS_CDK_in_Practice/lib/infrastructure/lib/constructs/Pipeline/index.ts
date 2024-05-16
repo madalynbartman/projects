@@ -71,9 +71,9 @@ export class PipelineStack extends Construct {
     /* ---------- Pipeline Build Projects ---------- */
     this.backEndTestProject = new PipelineProject(
       scope,
-      `Chapter8-BackEndTest-PipelineProject-${props.environment}`,
+      `Chapter9-BackEndTest-PipelineProject-${props.environment}`,
       {
-        projectName: `Chapter8-BackEndTest-PipelineProject-${props.environment}`,
+        projectName: `Chapter9-BackEndTest-PipelineProject-${props.environment}`,
         environment: {
           buildImage: LinuxBuildImage.fromCodeBuildImageId(
             'aws/codebuild/amazonlinux2-x86_64-standard:4.0',
@@ -102,9 +102,9 @@ export class PipelineStack extends Construct {
 
     this.deployProject = new PipelineProject(
       this,
-      `Chapter8-BackEndBuild-PipelineProject-${props.environment}`,
+      `Chapter9-BackEndBuild-PipelineProject-${props.environment}`,
       {
-        projectName: `Chapter8-BackEndBuild-PipelineProject-${props.environment}`,
+        projectName: `Chapter9-BackEndBuild-PipelineProject-${props.environment}`,
         environment: {
           privileged: true,
           buildImage: LinuxBuildImage.fromCodeBuildImageId(
@@ -162,9 +162,9 @@ export class PipelineStack extends Construct {
 
     this.frontEndTestProject = new PipelineProject(
       scope,
-      `Chapter8-FrontEndTest-PipelineProject-${props.environment}`,
+      `Chapter9-FrontEndTest-PipelineProject-${props.environment}`,
       {
-        projectName: `Chapter8-FrontEndTest-PipelineProject-${props.environment}`,
+        projectName: `Chapter9-FrontEndTest-PipelineProject-${props.environment}`,
         environment: {
           buildImage: LinuxBuildImage.fromCodeBuildImageId(
             'aws/codebuild/amazonlinux2-x86_64-standard:4.0',
@@ -193,7 +193,7 @@ export class PipelineStack extends Construct {
 
     /* ---------- Pipeline ---------- */
     this.pipeline = new Pipeline(scope, `Pipeline-${props.environment}`, {
-      pipelineName: `Chapter8-Pipeline-${props.environment}`,
+      pipelineName: `Chapter9-Pipeline-${props.environment}`,
     });
 
     /* ---------- Stages ---------- */
@@ -203,7 +203,7 @@ export class PipelineStack extends Construct {
         new GitHubSourceAction({
           actionName: 'Source',
           owner: 'westpoint-io',
-          repo: 'AWS-CDK-in-Action-Chapter-8',
+          repo: 'AWS-CDK-in-Action-chapter-9',
           branch: `${branch}`,
           oauthToken: secretToken,
           output: outputSource,
