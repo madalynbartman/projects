@@ -23,7 +23,11 @@
     "resolveJsonModule": true,
     "typeRoots": [
       "./node_modules/@types"
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@types/*": ["@types/*"],
+    }
   },
   "exclude": [
     "node_modules",
