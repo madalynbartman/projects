@@ -8,7 +8,6 @@ import {
 import * as targets from 'aws-cdk-lib/aws-route53-targets';
 import { ARecord, RecordTarget } from 'aws-cdk-lib/aws-route53';
 import { Table } from 'aws-cdk-lib/aws-dynamodb';
-import { StateMachine } from 'aws-cdk-lib/aws-stepfunctions';
 import { ACM } from '../ACM';
 import { Route53 } from '../Route53';
 
@@ -21,22 +20,21 @@ interface Props {
   acm: ACM;
   route53: Route53;
   dynamoTable: Table;
-  stateMachine: StateMachine;
 }
 
 export class ApiGateway extends Construct {
   constructor(scope: Construct, id: string, props: Props) {
     super(scope, id);
 
-    const { acm, route53, dynamoTable, stateMachine } = props;
+    const { acm, route53, dynamoTable } = props;
 
     const backEndSubDomain =
       process.env.NODE_ENV === 'Production'
         ? config.backend_subdomain
         : config.backend_dev_subdomain;
 
-    const restApi = new RestApi(this, 'chapter-7-rest-api', {
-      restApiName: `chapter-7-rest-api-${process.env.NODE_ENV || ''}`,
+    const restApi = new RestApi(this, 'chapter-8-rest-api', {
+      restApiName: `chapter-8-rest-api-${process.env.NODE_ENV || ''}`,
       description: 'serverless api using lambda functions',
       domainName: {
         certificate: acm.certificate,
@@ -58,12 +56,10 @@ export class ApiGateway extends Construct {
 
     const dynamoPost = new DynamoPost(this, 'dynamo-post-lambda', {
       dynamoTable,
-      stateMachine,
     });
 
     const dynamoGet = new DynamoGet(this, 'dynamo-get-lambda', {
       dynamoTable,
-      stateMachine,
     });
 
     // Integrations:

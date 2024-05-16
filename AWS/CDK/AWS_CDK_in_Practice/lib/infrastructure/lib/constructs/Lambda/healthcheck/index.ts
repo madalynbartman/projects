@@ -13,7 +13,7 @@ export class HealthCheckLambda extends Construct {
 
     this.func = new NodejsFunction(scope, 'health-check-lambda', {
       runtime: Runtime.NODEJS_16_X,
-      entry: path.resolve(__dirname, 'code', 'index.ts'),
+      entry: path.resolve(__dirname, 'lambda', 'index.ts'),
       handler: 'handler',
       timeout: Duration.seconds(30),
       environment: {},
