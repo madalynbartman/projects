@@ -39,6 +39,11 @@ export class PipelineStack extends Construct {
       deployCommand,
       branch,
       tag,
+      domainName,
+      backendSubdomain,
+      frontendSubdomain,
+      backendDevSubdomain,
+      frontendDevSubdomain,
       githubToken,
       workspaceId,
       channelId,
@@ -66,9 +71,9 @@ export class PipelineStack extends Construct {
     /* ---------- Pipeline Build Projects ---------- */
     this.backEndTestProject = new PipelineProject(
       scope,
-      `Chapter6-BackEndTest-PipelineProject-${props.environment}`,
+      `Chapter7-BackEndTest-PipelineProject-${props.environment}`,
       {
-        projectName: `Chapter6-BackEndTest-PipelineProject-${props.environment}`,
+        projectName: `Chapter7-BackEndTest-PipelineProject-${props.environment}`,
         environment: {
           buildImage: LinuxBuildImage.fromCodeBuildImageId(
             'aws/codebuild/amazonlinux2-x86_64-standard:4.0',
@@ -97,9 +102,9 @@ export class PipelineStack extends Construct {
 
     this.deployProject = new PipelineProject(
       this,
-      `Chapter6-BackEndBuild-PipelineProject-${props.environment}`,
+      `Chapter7-BackEndBuild-PipelineProject-${props.environment}`,
       {
-        projectName: `Chapter6-BackEndBuild-PipelineProject-${props.environment}`,
+        projectName: `Chapter7-BackEndBuild-PipelineProject-${props.environment}`,
         environment: {
           privileged: true,
           buildImage: LinuxBuildImage.fromCodeBuildImageId(
@@ -119,6 +124,15 @@ export class PipelineStack extends Construct {
               commands: [
                 'cd web',
                 'yarn install',
+                `
+                echo '{
+                  "domain_name": "${domainName}",
+                  "backend_subdomain": "${backendSubdomain}",
+                  "frontend_subdomain": "${frontendSubdomain}",
+                  "backend_dev_subdomain": "${backendDevSubdomain}",
+                  "frontend_dev_subdomain": "${frontendDevSubdomain}"
+                }' > src/config.json
+                `,
                 'cd ../server',
                 'yarn install',
                 'cd ../infrastructure',
@@ -148,9 +162,9 @@ export class PipelineStack extends Construct {
 
     this.frontEndTestProject = new PipelineProject(
       scope,
-      `Chapter6-FrontEndTest-PipelineProject-${props.environment}`,
+      `Chapter7-FrontEndTest-PipelineProject-${props.environment}`,
       {
-        projectName: `Chapter6-FrontEndTest-PipelineProject-${props.environment}`,
+        projectName: `Chapter7-FrontEndTest-PipelineProject-${props.environment}`,
         environment: {
           buildImage: LinuxBuildImage.fromCodeBuildImageId(
             'aws/codebuild/amazonlinux2-x86_64-standard:4.0',
@@ -178,13 +192,9 @@ export class PipelineStack extends Construct {
     );
 
     /* ---------- Pipeline ---------- */
-    this.pipeline = new Pipeline(
-      scope,
-      `BackendTest-Pipeline-${props.environment}`,
-      {
-        pipelineName: `Chapter6-Pipeline-${props.environment}`,
-      },
-    );
+    this.pipeline = new Pipeline(scope, `Pipeline-${props.environment}`, {
+      pipelineName: `Chapter7-Pipeline-${props.environment}`,
+    });
 
     /* ---------- Stages ---------- */
     this.pipeline.addStage({
@@ -193,7 +203,7 @@ export class PipelineStack extends Construct {
         new GitHubSourceAction({
           actionName: 'Source',
           owner: 'westpoint-io',
-          repo: 'AWS-CDK-in-Action-Chapter-6',
+          repo: 'AWS-CDK-in-Action-Chapter-7',
           branch: `${branch}`,
           oauthToken: secretToken,
           output: outputSource,
