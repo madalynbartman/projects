@@ -1,8 +1,4 @@
-import {
-  BlockPublicAccess,
-  Bucket,
-  BucketAccessControl,
-} from 'aws-cdk-lib/aws-s3';
+import { Bucket } from 'aws-cdk-lib/aws-s3';
 import { BucketDeployment, Source } from 'aws-cdk-lib/aws-s3-deployment';
 import { Construct } from 'constructs';
 import { resolve } from 'path';
@@ -38,14 +34,12 @@ export class S3 extends Construct {
       scope,
       `WebBucket-${process.env.NODE_ENV || ''}`,
       {
-        bucketName: `chapter-7-web-bucket-${unique_id}-${(
+        bucketName: `chapter-8-web-bucket-${unique_id}-${(
           process.env.NODE_ENV || ''
         ).toLocaleLowerCase()}`,
         websiteIndexDocument: 'index.html',
         websiteErrorDocument: 'index.html',
         publicReadAccess: true,
-        blockPublicAccess: BlockPublicAccess.BLOCK_ACLS,
-        accessControl: BucketAccessControl.BUCKET_OWNER_FULL_CONTROL,
         removalPolicy: RemovalPolicy.DESTROY,
         autoDeleteObjects: true,
       },
