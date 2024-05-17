@@ -322,7 +322,7 @@ Study tracker: 261 study hours
 Python: 77 hours
 Java: 50 hours
 Linux: 42 hours
-AWS: 41.5 hours
+AWS: 42 hours
 Docker, Helm, Kube: 21 hours
 BASH scripting: 16 hours
 JavaScript: 5.5 hours
