@@ -1,4 +1,5 @@
 2024
+• Python for Everybody by Charles Severance
 • How Linux Works by Brian Ward
 • The Illustrated AWS Cloud by by Jen Looper, Denise Yu 
 • Devops for the Desperate by Bradley Smith
