@@ -3,3 +3,4 @@
 • The Illustrated AWS Cloud by by Jen Looper, Denise Yu 
 • Devops for the Desperate by Bradley Smith
 • AWS CDK in Practice by Mark Avdi & Leo Lam
+• Attached by Amir Levine, M.D. and Rachel S.  F.Heller, M.A.
