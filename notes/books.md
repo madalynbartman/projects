@@ -5,3 +5,4 @@
 • Devops for the Desperate by Bradley Smith
 • AWS CDK in Practice by Mark Avdi & Leo Lam
 • Attached by Amir Levine, M.D. and Rachel S.  F.Heller, M.A.
+• Breaking Free From Broke by George Kamel
