@@ -325,6 +325,7 @@ Linux: 42 hours
 AWS: 42 hours
 Docker, Helm, Kube: 21 hours
 BASH scripting: 16 hours
+Azure: 6.5 hours
 JavaScript: 5.5 hours
 Argo: 5.5 hours
 Ansible: 3.5
