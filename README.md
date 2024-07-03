@@ -329,7 +329,7 @@ Azure: 11 hours
 JavaScript: 5.5 hours
 Argo: 5.5 hours
 Ansible: 3.5
-Splunk: 2.5 hours
+Splunk: 3 hours
 
 
 Markers:
