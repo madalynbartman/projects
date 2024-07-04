@@ -318,7 +318,7 @@ inquisition: 183 hours (72 first playthrough, 112 second)
 ESO: 148.5 hours
 Steam: 1,927(not counting offline or TF2 account)
 
-Study tracker: 287 study hours 
+Study tracker: 288.5 study hours 
 Python: 77 hours
 Java: 50 hours
 Linux: 42 hours
@@ -329,7 +329,7 @@ Azure: 11 hours
 JavaScript: 5.5 hours
 Argo: 5.5 hours
 Ansible: 3.5
-Splunk: 3 hours
+Splunk: 4.5 hours
 
 
 Markers:
