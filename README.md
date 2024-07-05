@@ -328,10 +328,9 @@ BASH scripting: 16 hours
 Azure: 11 hours
 JavaScript: 5.5 hours
 Argo: 5.5 hours
-Ansible: 3.5
 Splunk: 4.5 hours
+Ansible: 3.5 hours
 Kafka: 3 hours
-
 
 Markers:
 AWS: 29 hours of study till I could engineer solutions off the cuff 
