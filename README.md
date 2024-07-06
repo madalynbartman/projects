@@ -376,13 +376,13 @@ https://www.youtube.com/watch?v=JZ5yPdoPooU
 David van Brinks MIDI guide:
 https://www.cs.cmu.edu/~music/cmsip/readings/davids-midi-spec.htm
 
-Music Production with FL studio (FCC)
+Music Production with FL studio (FCC):
 https://www.youtube.com/watch?v=BUjdnxgBgzM
 
-Advanced music Production with FL studio (FCC)
+Advanced music Production with FL studio (FCC):
 https://www.youtube.com/watch?v=I_ShMaNw0Rc
 
-FL Studio Python API Stubs
+FL Studio Python API Stubs:
 https://m.youtube.com/watch?v=6_KdXJIfeoI
 
 Project GitHub Repository:
@@ -391,8 +391,11 @@ https://github.com/IL-Group/FL-Studio-API-Stubs
 Unofficial Online API Documentation:
 https://il-group.github.io/FL-Studio-API-Stubs/
 
-Blogs
+Reaper tutorial for beginners:
+https://www.youtube.com/watch?v=XRAYqWFeYR0
 
+
+Blogs
 
 Wisdom Wednesdays by Joss Visser (Google):
 Why Python is terrible...
