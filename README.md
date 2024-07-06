@@ -391,6 +391,9 @@ https://github.com/IL-Group/FL-Studio-API-Stubs
 Unofficial Online API Documentation:
 https://il-group.github.io/FL-Studio-API-Stubs/
 
+Flapi:
+https://github.com/MaddyGuthridge/Flapi
+
 Reaper tutorial for beginners:
 https://www.youtube.com/watch?v=XRAYqWFeYR0
 
