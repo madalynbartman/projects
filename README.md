@@ -333,7 +333,7 @@ Ansible: 3.5 hours
 Kafka: 3 hours
 
 Does it count?
-FL: 1 hour
+FL Studio: 1 hour
 
 Markers:
 AWS: 29 hours of study till I could engineer solutions off the cuff 
