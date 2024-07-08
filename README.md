@@ -359,7 +359,7 @@ Question driven development
 (break outta tutorial hell bigboxswe)
 might be the most helpful video ever
 https://www.youtube.com/watch?v=343EWZS9O88
-Active leraning (bigboxswe)
+Active learning (bigboxswe)
 https://www.youtube.com/watch?v=tG_ufZb7Cew&pp=ygULYmlnIGJveCBzd2U%3D
 Active learning (MIT)
 https://www.youtube.com/watch?v=zoa2pKYp_fk
