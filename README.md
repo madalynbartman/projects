@@ -338,6 +338,7 @@ FL Studio: 1 hour
 
 Markers:
 AWS: 29 hours of study till I could engineer solutions off the cuff 
+Splunk: CCU after 8 hours
 
 Replace gaming with coding:
 How To Replace Video Games With Coding by bigboxSWE
