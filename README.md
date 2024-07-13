@@ -327,12 +327,12 @@ Docker, Helm, Kube: 21 hours
 BASH scripting: 16 hours
 Azure: 11 hours
 Splunk: 14.5 hours
+Cribl: 6.5 hours
 Kafka: 6.5 hours
 JavaScript: 5.5 hours
 Argo: 5.5 hours
 Ansible: 3.5 hours
 ELK: 2.5 hours
-Cribl: 6.5 hours
 
 Does it count?
 FL Studio: 1 hour
