@@ -313,7 +313,7 @@ Functions are better for reliability.
 If there's an issue, you only have to fix it once.)
 Script = short story 
 
-skyrim: 381 hours
+skyrim: 382.5 hours
 inquisition: 183 hours (72 first playthrough, 112 second)
 ESO: 148.5 hours
 Steam: 1,927(not counting offline or TF2 account)
