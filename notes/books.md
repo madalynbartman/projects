@@ -7,3 +7,4 @@
 • Attached by Amir Levine, M.D. and Rachel S.  F.Heller, M.A.
 • Breaking Free From Broke by George Kamel
 • The Power of Attachment by Diane Polle Heller, PhD
+• Kafka Troubleshooting in Production by Elad Eldor
