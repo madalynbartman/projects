@@ -326,7 +326,7 @@ AWS: 53.5 hours
 Docker, Helm, Kube: 21 hours
 BASH scripting: 16 hours
 Azure: 11 hours
-Splunk: 14.5 hours
+Splunk: 15 hours
 Cribl: 6.5 hours
 Kafka: 6.5 hours
 JavaScript: 5.5 hours
