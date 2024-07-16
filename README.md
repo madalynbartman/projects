@@ -328,7 +328,7 @@ BASH scripting: 16 hours
 Splunk: 15 hours
 Azure: 11 hours
 Kafka: 6.75 hours
-Cribl: 6.5 hours
+Cribl: 7 hours
 JavaScript: 5.5 hours
 Argo: 5.5 hours
 Ansible: 3.5 hours
