@@ -332,7 +332,7 @@ Cribl: 7 hours
 JavaScript: 5.5 hours
 Argo: 5.5 hours
 Ansible: 3.5 hours
-ELK: 2.5 hours
+ELK: 4 hours
 
 Does it count?
 FL Studio: 1 hour
