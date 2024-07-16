@@ -342,6 +342,10 @@ Markers:
 AWS: 29 hours of study till I could engineer solutions off the cuff 
 Splunk: CCU after 8 hours
 
+Reading stats (7/15/24):
+.5 pg/min dense text
+1.5 pg/min text w/ lots of diagrams
+
 Replace gaming with coding:
 How To Replace Video Games With Coding by bigboxSWE
 https://www.youtube.com/watch?v=jclr0N6mvUI
