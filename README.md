@@ -325,7 +325,7 @@ Java: 50 hours
 Linux: 42 hours
 Docker, Helm, Kube: 21 hours
 BASH scripting: 16 hours
-Splunk: 15 hours
+Splunk: 15.5 hours
 Azure: 11 hours
 Cribl: 9.5 hours
 Kafka: 6.75 hours
