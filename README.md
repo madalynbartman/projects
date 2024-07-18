@@ -339,6 +339,7 @@ FL Studio: 1 hour
 Meditation: .75 hour
 
 Markers:
+Python: ?
 AWS: 29 hours of study till I could engineer solutions off the cuff 
 Splunk: CCU after 8 hours
 
