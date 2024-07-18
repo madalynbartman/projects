@@ -336,7 +336,7 @@ Ansible: 3.5 hours
 
 Does it count?
 FL Studio: 1 hour
-Meditation: .5 hour
+Meditation: .75 hour
 
 Markers:
 AWS: 29 hours of study till I could engineer solutions off the cuff 
