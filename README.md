@@ -211,6 +211,9 @@ https://www.youtube.com/watch?v=ujTCoH21GlA&list=PLzMcBGfZo4-mP7qA9cagf68V06sko5
 Algorithmic Trading with ML in Python:
 https://www.youtube.com/watch?v=9Y3yaoi9rUQ
 
+Data Science Lab Set Up:
+https://medium.com/@tiagocarloscf/building-your-own-ai-test-lab-a-guide-to-personal-gpu-workstations-f7e757b6deee
+
 Python & ELK for Data Engineering
 
 How to learn Python for Data Engineering:
