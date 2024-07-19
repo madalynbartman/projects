@@ -217,6 +217,9 @@ https://medium.com/@tiagocarloscf/building-your-own-ai-test-lab-a-guide-to-perso
 Python Advanced AI Agent Tutorial - LlamaIndex, Ollama and Multi-LLM!
 https://www.youtube.com/watch?v=JLmI0GJuGlY&t=109s
 
+Build an AI Server: - Best local AI tutorial with Ollama
+https://www.youtube.com/watch?v=Wjrdr0NU4Sk
+
 Python & ELK for Data Engineering
 
 How to learn Python for Data Engineering:
