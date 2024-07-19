@@ -275,6 +275,11 @@ https://www.youtube.com/watch?v=LHNtL4zDBuk&pp=ygUccHl0aG9uIGZvciBlbGFzdGljIGFuZ
 Build a Reactive Data Streaming App with Python and Apache Kafka | Coding In Motion:
 https://www.youtube.com/watch?v=jItIQ-UvFI4&pp=ygUccHl0aG9uIGZvciBlbGFzdGljIGFuZCBrYWZrYQ%3D%3D
 
+Splunk
+
+Homelab: Splunk Setup
+https://www.youtube.com/watch?v=c1Vetn6Byf4 
+
 
 *************************************
 Books                             
