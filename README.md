@@ -365,6 +365,8 @@ Reading stats:
 20 pg/hour mixed text 
 - when I first started reading again
 
+crossfit tracker:
+
 Replace gaming with coding:
 How To Replace Video Games With Coding by bigboxSWE
 https://www.youtube.com/watch?v=jclr0N6mvUI
