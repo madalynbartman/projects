@@ -350,7 +350,7 @@ Ansible: 3.5 hours
 
 Does it count?
 FL Studio: 1 hour
-Meditation: .75 hour
+Meditation: 1 hour
 
 Markers:
 Python: ?
