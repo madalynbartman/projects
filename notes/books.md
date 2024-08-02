@@ -8,3 +8,4 @@
 • Breaking Free From Broke by George Kamel
 • The Power of Attachment by Diane Polle Heller, PhD
 • Kafka Troubleshooting in Production by Elad Eldor
+• Kibana 8.x - A Quick Start Guide to Data Analysis by Krishna Shah
