@@ -9,3 +9,4 @@
 • The Power of Attachment by Diane Polle Heller, PhD
 • Kafka Troubleshooting in Production by Elad Eldor
 • Kibana 8.x - A Quick Start Guide to Data Analysis by Krishna Shah
+• Exam Ref AZ-900 Microsoft Azure Fundamentals, 3rd Edition by Jim Cheshire
