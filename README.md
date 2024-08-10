@@ -358,6 +358,7 @@ Markers:
 Python: 26 hours of study till I could write original off the cuff hackerrank responses. Wrote my first original art in python using turtle after 55 hours of study/practice.
 AWS: 29 hours of study till I could engineer solutions off the cuff 
 Splunk: Certified user after 8 hours
+Java: 46 hours till I could write original hackerrank responses
 
 Reading stats:
 (7/15/24)
