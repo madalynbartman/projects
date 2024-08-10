@@ -355,7 +355,7 @@ Guitar: 1 hour
 Pickleball: (/2) 
 
 Markers:
-Python: ?
+Python: 26 hours of study till I could write original off the cuff hackerrank responses.
 AWS: 29 hours of study till I could engineer solutions off the cuff 
 Splunk: CCU after 8 hours
 
