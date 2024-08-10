@@ -355,7 +355,7 @@ Guitar: 1 hour
 Pickleball: (/2) 
 
 Markers:
-Python: 26 hours of study till I could write original off the cuff hackerrank responses.
+Python: 26 hours of study till I could write original off the cuff hackerrank responses. Wrote my first original art in python using turtle after 55 hours of study/practice.
 AWS: 29 hours of study till I could engineer solutions off the cuff 
 Splunk: CCU after 8 hours
 
