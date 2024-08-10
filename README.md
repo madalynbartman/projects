@@ -359,6 +359,7 @@ Python: 26 hours of study till I could write original off the cuff hackerrank re
 AWS: 29 hours of study till I could engineer solutions off the cuff 
 Splunk: Certified user after 8 hours
 Java: 46 hours till I could write original hackerrank responses
+SA: 1892 hours
 
 Reading stats:
 (7/15/24)
