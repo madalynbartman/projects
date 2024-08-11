@@ -352,7 +352,7 @@ Does it count?
 FL Studio: 1 hour
 Meditation: 1 hour (1/2)
 Guitar: 1 hour
-Pickleball: (/2) 
+Pickleball: .25 hour
 
 Markers:
 Python: 26 hours of study till I could write original off the cuff hackerrank responses. Wrote my first original art in python using turtle after 55 hours of study/practice.
