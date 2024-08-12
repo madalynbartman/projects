@@ -336,8 +336,8 @@ Study tracker: 342.75 study hours
 Python: 77 hours
 AWS: 55.75 hours
 Java: 50 hours
-Azure: 28.5 hours
 Linux: 42 hours
+Azure: 28.5 hours
 Docker, Helm, Kube: 21 hours
 Splunk: 19.25 hours
 BASH scripting: 16 hours
