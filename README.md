@@ -334,7 +334,7 @@ Steam: 1,927(not counting offline or TF2 account)
 
 Study tracker: 342.75 study hours 
 Python: 77 hours
-AWS: 57.75 hours
+AWS: 55.75 hours
 Java: 50 hours
 Linux: 42 hours
 Azure: 28.5 hours
