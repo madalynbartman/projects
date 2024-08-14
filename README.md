@@ -348,7 +348,8 @@ Argo: 5.5 hours
 ELK: 4 hours
 Ansible: 3.5 hours
 
-Does it count?
+Hobby tracker:
+Crossfit: 3 hours
 FL Studio: 1 hour
 Meditation: 1 hour (1/2)
 Guitar: 2 hour
@@ -368,8 +369,6 @@ Reading stats:
 (11/15/23)
 20 pg/hour mixed text 
 - when I first started reading again
-
-crossfit tracker: 1
 
 Replace gaming with coding:
 How To Replace Video Games With Coding by bigboxSWE
