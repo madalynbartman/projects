@@ -350,7 +350,8 @@ Ansible: 3.5 hours
 
 Hobby tracker:
 Crossfit: 3 hours
-Guitar: 2 hour
+Guitar: 2 hours
+Reading (for fun not studying): 2 hours
 Meditation: 1 hour (1/2)
 FL Studio: 1 hour
 Pickleball: .25 hour
