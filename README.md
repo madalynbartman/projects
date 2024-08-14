@@ -351,7 +351,7 @@ Ansible: 3.5 hours
 Does it count?
 FL Studio: 1 hour
 Meditation: 1 hour (1/2)
-Guitar: 1 hour
+Guitar: 2 hour
 Pickleball: .25 hour
 
 Markers:
