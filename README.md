@@ -303,7 +303,9 @@ https://www.makeartwithpython.com/book/introduction
 Misc                              
 *************************************
 
-
+Programming is Creative Expression:
+https://medium.com/@chulcher/coding-is-creative-c85b7566a41b
+(One of my favorites. Right up there with the two python blog posts in Wednesday Wisdom)
 Creative coding:
 https://www.hackerrank.com/blog/creating-art-with-code/
 Visualizing music: https://experiments.withgoogle.com/seeing-music
