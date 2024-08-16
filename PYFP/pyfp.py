@@ -29,4 +29,4 @@ print(hello, world)
 # input method 
 # needs a sting
 name = input('Name: ') # include a space so the user doesnt start typing right on the prompt
-print
+print('Hello', name, 'you are', age, ' years old')
