@@ -4,9 +4,9 @@ import requests
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/") # endpoint
 def index():
     return "Hello world!"
 
-if __name__=="__main__": #ensures you ran this python file directly, not if its used by a diff python file
+if __name__=="__main__": # ensures you ran this python file directly, not if its used by a diff python file
     app.run(debug=True)
