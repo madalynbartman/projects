@@ -339,7 +339,7 @@ Python: 79.75 hours
 AWS: 55.75 hours
 Java: 50 hours
 Linux: 42 hours
-Azure: 36 hours
+Azure: 41.5 hours
 Docker, Helm, Kube: 21 hours
 Splunk: 19.25 hours
 BASH scripting: 16 hours
