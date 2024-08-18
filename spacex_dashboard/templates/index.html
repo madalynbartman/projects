@@ -1,8 +1,10 @@
+{% from "launch_card.html" import render_lauch %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SpaceX Launches</title>
     <link
       rel="stylesheet"
@@ -15,9 +17,9 @@
 <body>
     <h1>SpaceX Launches</h1>
 
-    <ul class=""nav nav-tabs">
+    <ul class="nav nav-tabs">
         <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#sucessful">Successful</a>
+            <a class="nav-link active" data-toggle="tab" href="#successful">Successful</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#failed">Failed</a>
@@ -26,11 +28,23 @@
             <a class="nav-link" data-toggle="tab" href="#upcoming">Upcoming</a>
         </li>
     </ul>
-    {% for launch in launches.successful %}
-        <div>
-            <p>Name: {{launch.name}}</p>
-            <p>Date: {{launch.date_utc}}</p>
+    <div class="tab-content">
+        <div id="successful" class="container tab-pane active">
+          {% for launch in launches.sucessful %}
+          {{render_launch(launch)}}
+          {% endfor %}
         </div>
-    {% endfor %}
+        <div id="failed" class="container tab-pane fade">
+          {% for launch in launches.failed %}
+          {{render_launch(launch)}}
+          {% endfor %}
+        </div>
+        <div id="upcoming" class="container tab-pane fade">
+          {% for launch in launches.upcoming %}
+          {{render_launch(launch)}}
+          {% endfor %}
+        </div>
+    </div>
+
 </body>
 </html>
