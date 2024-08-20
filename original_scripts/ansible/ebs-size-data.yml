@@ -1,0 +1,15 @@
+---
+- name: EBS Size Data
+  hosts: all
+  become: true
+  gather_facts: no
+  environment:
+    AWS_DEFAULT_REGION: "us-iso-east-1"
+    AWS CA_BUNDLE: "/etc/pki/tls/certs/ca-bundle.crt"
+  tasks:
+
+    - name: hostname
+      command: "df -T"
+      register: df_output
+
+    - local_action: shell echo "Host {{ inventory_hostname }} \r\n {{ df_output.stdout_lines }}" >> ./results.txt
