@@ -1,0 +1,300 @@
+{
+    "dataSources": {
+        "ds_7U8ItLc0": {
+            "type": "ds.search",
+            "options": {
+                "query": "index=main sourcetype=access_combined action=purchase status=200\n| lookup product_codes.csv product_id \n| search category=*\n| stats count as Purchases by product_name product_price\n| table product_name Purchases product_price\n| eval Revenue=Purchases*product_price\n| table product_name Purchases Revenue\n| sort -Purchases\n| rename product_name as \"Product\"\n| head 8",
+                "queryParameters": {
+                    "earliest": "-4h@m",
+                    "latest": "now"
+                }
+            },
+            "name": "Table search"
+        },
+        "ds_lKKI7vaY": {
+            "type": "ds.search",
+            "options": {
+                "query": "index=main sourcetype=access_combined action=purchase status=200\n| lookup product_codes.csv product_id\n| stats count as Purchases by product_name product_price\n| table product_name Purchases product_price\n| eval Revenue=Purchases*product_price\n| table product_name Purchases Revenue\n| sort -Purchases\n| rename product_name as \"Product\"\n| head 8",
+                "queryParameters": {
+                    "earliest": "-4h@m",
+                    "latest": "now"
+                }
+            },
+            "name": "Table search"
+        },
+        "ds_uybecoGO": {
+            "type": "ds.search",
+            "options": {
+                "query": "index=main sourcetype=access_combined action=purchase status=200\n| lookup product_codes.csv product_id\n| search category=$category$\n| stats count as Purchases by product_name product_price\n| table product_name Purchases product_price\n| eval Revenue=Purchases*product_price\n| table product_name Purchases Revenue\n| sort -Purchases\n| rename product_name as \"Product\"\n| head 8",
+                "queryParameters": {
+                    "earliest": "$global_time.earliest$",
+                    "latest": "$global_time.latest$"
+                }
+            },
+            "name": "Most Purchased Products search"
+        },
+        "ds_owaGHGi3": {
+            "type": "ds.search",
+            "options": {
+                "query": "index=main sourcetype=access_combined action=purchase status=200\n| lookup product_codes.csv product_id\n| search category=$category$\n| stats count values(product_price) as Price by product_name product_id\n| table product_name product_id count Price\n| eval revenue=count*Price\n| fields product_name revenue\n| rename product_name as \"Product\" revenue as \"Revenue\"\n| sort -Revenue",
+                "queryParameters": {
+                    "earliest": "$global_time.earliest$",
+                    "latest": "$global_time.latest$"
+                }
+            },
+            "name": "Revenue by Product search"
+        },
+        "ds_QpFQfIi1": {
+            "type": "ds.search",
+            "options": {
+                "query": "index=main sourcetype=access_combined action=purchase status=200\n| lookup product_codes.csv product_id\n| fields _time category clientip\n| timechart count by category",
+                "queryParameters": {
+                    "earliest": "$global_time.earliest$",
+                    "latest": "$global_time.latest$"
+                },
+                "enableSmartSources": true
+            },
+            "name": "Purchase Trends search"
+        },
+        "ds_PBI1VKWs": {
+            "type": "ds.chain",
+            "options": {
+                "extend": "ds_owaGHGi3",
+                "query": "| stats sum(Revenue) as \"Total Revenue\""
+            },
+            "name": "Total Revenue search"
+        }
+    },
+    "visualizations": {
+        "viz_v2zaeylb": {
+            "type": "splunk.table",
+            "options": {
+                "count": 20,
+                "dataOverlayMode": "none",
+                "drilldown": "none",
+                "showRowNumbers": false,
+                "showInternalFields": false,
+                "backgroundColor": "transparent",
+                "tableFormat": {
+                    "rowBackgroundColors": "> table | seriesByIndex(0) | pick(tableAltRowBackgroundColorsByBackgroundColor)",
+                    "headerBackgroundColor": "> backgroundColor | setColorChannel(tableHeaderBackgroundColorConfig)",
+                    "rowColors": "> rowBackgroundColors | maxContrast(tableRowColorMaxContrast)",
+                    "headerColor": "> headerBackgroundColor | maxContrast(tableRowColorMaxContrast)"
+                },
+                "columnFormat": {
+                    "Revenue": {
+                        "data": "> table | seriesByName(\"Revenue\") | formatByType(RevenueColumnFormatEditorConfig)"
+                    },
+                    "Purchases": {
+                        "data": "> table | seriesByName(\"Purchases\") | formatByType(PurchasesColumnFormatEditorConfig)",
+                        "rowColors": "> table | seriesByName(\"Purchases\") | rangeValue(PurchasesRowColorsEditorConfig)"
+                    }
+                }
+            },
+            "dataSources": {
+                "primary": "ds_uybecoGO"
+            },
+            "title": "Most Purchased Products",
+            "context": {
+                "RevenueColumnFormatEditorConfig": {
+                    "number": {
+                        "thousandSeparated": true,
+                        "unitPosition": "before",
+                        "unit": "$",
+                        "precision": 2
+                    }
+                },
+                "PurchasesColumnFormatEditorConfig": {
+                    "number": {
+                        "thousandSeparated": false,
+                        "unitPosition": "after"
+                    }
+                },
+                "PurchasesRowColorsEditorConfig": [
+                    {
+                        "value": "#FE3A3A",
+                        "to": 200
+                    },
+                    {
+                        "value": "#FF7149",
+                        "from": 200,
+                        "to": 220
+                    },
+                    {
+                        "value": "#FFD442",
+                        "from": 220,
+                        "to": 230
+                    },
+                    {
+                        "value": "#2EB82E",
+                        "from": 230,
+                        "to": 240
+                    },
+                    {
+                        "value": "#088F44",
+                        "from": 240
+                    }
+                ]
+            }
+        },
+        "viz_9mGQ2ixQ": {
+            "type": "splunk.pie",
+            "dataSources": {
+                "primary": "ds_owaGHGi3"
+            },
+            "title": "Revenue by Product",
+            "options": {
+                "backgroundColor": "transparent"
+            }
+        },
+        "viz_OiIU6ah8": {
+            "type": "splunk.column",
+            "dataSources": {
+                "primary": "ds_QpFQfIi1"
+            },
+            "title": "Purchase Trends",
+            "options": {
+                "backgroundColor": "transparent",
+                "stackMode": "stacked",
+                "legendDisplay": "bottom"
+            },
+            "eventHandlers": [
+                {
+                    "type": "drilldown.setToken",
+                    "options": {
+                        "tokens": [
+                            {
+                                "token": "category",
+                                "key": "name"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "viz_zXdojEmB": {
+            "type": "splunk.singlevalue",
+            "options": {
+                "majorValue": "> sparklineValues | lastPoint()",
+                "trendValue": "> sparklineValues | delta(-2)",
+                "sparklineValues": "> primary | seriesByName('Total Revenue')",
+                "unitPosition": "before",
+                "unit": "$",
+                "numberPrecision": 2,
+                "sparklineDisplay": "off",
+                "majorColor": "#53a051",
+                "backgroundColor": "transparent"
+            },
+            "dataSources": {
+                "primary": "ds_PBI1VKWs"
+            }
+        },
+        "viz_mUpGBlTC": {
+            "type": "splunk.markdown",
+            "options": {
+                "markdown": "# Total Revenue for $category$",
+                "fontColor": "#ffffff"
+            }
+        }
+    },
+    "inputs": {
+        "input_global_trp": {
+            "type": "input.timerange",
+            "options": {
+                "token": "global_time",
+                "defaultValue": "-24h@h,now"
+            },
+            "title": "Global Time Range"
+        }
+    },
+    "layout": {
+        "type": "absolute",
+        "options": {
+            "width": 1300,
+            "height": 1295,
+            "display": "auto",
+            "backgroundImage": {
+                "sizeType": "contain",
+                "x": 0,
+                "y": 0,
+                "src": "https://splk.it/Buttercup-Games-Background"
+            }
+        },
+        "structure": [
+            {
+                "item": "viz_v2zaeylb",
+                "type": "block",
+                "position": {
+                    "x": 770,
+                    "y": 10,
+                    "w": 510,
+                    "h": 320
+                }
+            },
+            {
+                "item": "viz_9mGQ2ixQ",
+                "type": "block",
+                "position": {
+                    "x": 100,
+                    "y": 390,
+                    "w": 450,
+                    "h": 260
+                }
+            },
+            {
+                "item": "viz_OiIU6ah8",
+                "type": "block",
+                "position": {
+                    "x": 80,
+                    "y": 20,
+                    "w": 650,
+                    "h": 320
+                }
+            },
+            {
+                "item": "viz_zXdojEmB",
+                "type": "block",
+                "position": {
+                    "x": 770,
+                    "y": 360,
+                    "w": 500,
+                    "h": 320
+                }
+            },
+            {
+                "item": "viz_mUpGBlTC",
+                "type": "block",
+                "position": {
+                    "x": 900,
+                    "y": 570,
+                    "w": 337,
+                    "h": 37
+                }
+            }
+        ],
+        "globalInputs": [
+            "input_global_trp"
+        ]
+    },
+    "title": "Buttercup Games Online Store Madalyn Bartman",
+    "description": "Buttercup Games Online Store",
+    "defaults": {
+        "dataSources": {
+            "ds.search": {
+                "options": {
+                    "queryParameters": {
+                        "latest": "$global_time.latest$",
+                        "earliest": "$global_time.earliest$"
+                    }
+                }
+            }
+        },
+        "tokens": {
+            "default": {
+                "category": {
+                    "value": "*"
+                }
+            }
+        }
+    }
+}
